@@ -8,18 +8,16 @@
     gap: 15px;
  
 }
-
-.navbar_left::before {
-    content: "";
+.corner_left{
     position: absolute;
     bottom: 0;
+    color: black;
     left: 0;
-    width: 30px; /* Adjust based on angle */
+    width: 30px;
     height: 30px;
-    background-color: white; /* Same as body background */
+    background-color: transparent; 
     clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
-
 
 .navbar_right{
     position: relative;
@@ -29,13 +27,15 @@
     display: flex;
     gap: 15px;
 }
-.navbar_right::before {
-    content: "";
+.corner_right{
     position: absolute;
     top: 0;
     right: 0;
     width: 30px; /* Adjust based on angle */
     height: 30px;
-    background-color: white; /* Same as body background */
+    background-color: transparent; /* Same as body background */
     clip-path: polygon(0 0, 100% 100%, 150% 0%);
 }
+
+
+

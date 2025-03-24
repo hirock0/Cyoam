@@ -1,5 +1,10 @@
 import Image from "next/image"
 import Style from "./nav.module.css"
+import Link from "next/link"
+import { CgMail } from "react-icons/cg";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdWifiCalling3 } from "react-icons/md";
+import { FiClock } from "react-icons/fi";
 const Nav = () => {
     return (
         <nav>
@@ -28,10 +33,190 @@ const Nav = () => {
                             {/* logo_svg */}
 
                         </div>
+                        {/* mid-part_start */}
+                        <div className=" h-full px-5 ">
+                            <div className="h-10 flex items-center gap-3">
+                                <div className=" flex items-center gap-2">
+                                    <CgMail className=" text-cyan-300" />
+                                    <h1>
+                                        cyoam.cyoam@gmail.com
+                                    </h1>
+                                </div>
+                                <div className=" flex items-center gap-2">
+                                    <MdWifiCalling3 className=" text-cyan-300" />
+                                    <h1>
+                                        +8801700554293
+                                    </h1>
+                                </div>
+                                <div className=" flex items-center gap-2">
+
+
+                                    <FiClock className=" text-cyan-300" />
+                                    <h1>
+                                        Sut - Thur 9:00 - 17:00, Fri off
+                                    </h1>
+
+
+                                </div>
+
+                            </div>
+                            {/* ----------------- */}
+                            <div className="">
+                                <div className=" flex items-center gap-5">
+                                    <div className=" flex items-center gap-2 group relative cursor-pointer">
+                                        <h1 >Home</h1>
+                                        <MdKeyboardArrowDown className=" group-hover:rotate-180" />
+                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                            <li><Link href={"/sadf"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+                                    <div className=" flex items-center gap-2 group relative cursor-pointer">
+                                        <h1 >About</h1>
+                                        <MdKeyboardArrowDown className=" group-hover:rotate-180" />
+                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                            <li><Link href={"/sadf"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+                                    <div className=" flex items-center gap-2 group relative cursor-pointer">
+                                        <h1 >Service</h1>
+                                        <MdKeyboardArrowDown className=" group-hover:rotate-180" />
+                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                            <li><Link href={"/sadf"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+                                    <div className=" flex items-center gap-2 group relative cursor-pointer">
+                                        <h1 >Work</h1>
+                                        <MdKeyboardArrowDown className=" group-hover:rotate-180" />
+                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                            <li><Link href={"/sadf"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+                                    <div className=" flex items-center gap-2 group relative cursor-pointer">
+                                        <h1 >Contact</h1>
+                                        <MdKeyboardArrowDown className=" group-hover:rotate-180" />
+                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                            <li><Link href={"/sadf"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+                                            <li><Link href={"/"}>
+                                                Home
+                                            </Link>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        {/* mid-part-end */}
+
+                        {/* Border_Corner_start */}
+                        <div className={`${Style.corner_left} overflow-hidden`}
+                            style={{
+                                backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat",
+                                backgroundSize: "cover"
+                            }}
+                        >
+
+                        </div>
+                        {/* Border_Corner_end */}
                     </div>
                     {/* 3/4-end */}
                     {/* 1/4-start */}
-                    <div className={`${Style.navbar_right} h-full w-1/4`}>right</div>
+                    <div className={`${Style.navbar_right} h-full w-1/4 flex items-center`}>
+
+                        <div className="">
+                            sdfsdfsdf
+                        </div>
+                        {/* Border_Corner_start */}
+                        <div className={`${Style.corner_right} overflow-hidden`}
+                            style={{
+                                backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat",
+                                backgroundSize: "cover"
+                            }}
+                        >
+
+                        </div>
+                    </div>
+                    {/* Border_Corner_end */}
                     {/* 1/4-end */}
                 </div>
             </div>
