@@ -1,0 +1,41 @@
+
+.navbar_left {
+    position: relative;
+    background-color: #0C5DB6;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+ 
+}
+
+.navbar_left::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px; /* Adjust based on angle */
+    height: 30px;
+    background-color: white; /* Same as body background */
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+
+.navbar_right{
+    position: relative;
+    background-color: #00AEEF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+}
+.navbar_right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px; /* Adjust based on angle */
+    height: 30px;
+    background-color: white; /* Same as body background */
+    clip-path: polygon(0 0, 100% 100%, 150% 0%);
+}
