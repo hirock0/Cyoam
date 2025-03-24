@@ -36,6 +36,13 @@
     background-color: transparent; /* Same as body background */
     clip-path: polygon(0 0, 100% 100%, 150% 0%);
 }
+.mid_top{
 
+}
+@media (max-width:1300px) {
+    .mid_top{
+        display: none;
+    }    
+}
 
 

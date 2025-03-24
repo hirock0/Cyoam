@@ -34,8 +34,8 @@ const Nav = () => {
 
                         </div>
                         {/* mid-part_start */}
-                        <div className=" h-full px-5 ">
-                            <div className="h-10 flex items-center gap-3">
+                        <div className=" h-full px-5">
+                            <div className={` ${Style.mid_top} h-10 flex items-center gap-3 `}>
                                 <div className=" flex items-center gap-2">
                                     <CgMail className=" text-cyan-300" />
                                     <h1>
@@ -62,7 +62,7 @@ const Nav = () => {
                             </div>
                             {/* ----------------- */}
                             <div className="">
-                                <div className=" flex items-center gap-5">
+                                <div className=" flex items-center gap-5 max-lg:hidden">
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
                                         <h1 >Home</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
