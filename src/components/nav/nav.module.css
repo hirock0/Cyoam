@@ -1,48 +1,55 @@
-
 .navbar_left {
-    position: relative;
-    background-color: #0C5DB6;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    gap: 15px;
- 
+  position: relative;
+  background-color: #0c5db6;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  gap: 15px;
 }
-.corner_left{
-    position: absolute;
-    bottom: 0;
-    color: black;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-color: transparent; 
-    clip-path: polygon(0 0, 100% 100%, 0 100%);
-}
-
-.navbar_right{
-    position: relative;
-    background-color: #00AEEF;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    gap: 15px;
-}
-.corner_right{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30px; /* Adjust based on angle */
-    height: 30px;
-    background-color: transparent; /* Same as body background */
-    clip-path: polygon(0 0, 100% 100%, 150% 0%);
-}
-.mid_top{
-
-}
-@media (max-width:1300px) {
-    .mid_top{
-        display: none;
-    }    
+.corner_left {
+  position: absolute;
+  bottom: 0;
+  color: black;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
+.navbar_right {
+  position: relative;
+  background-color: #00aeef;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  gap: 15px;
+}
+.corner_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px; /* Adjust based on angle */
+  height: 30px;
+  background-color: transparent; /* Same as body background */
+  clip-path: polygon(0 0, 100% 100%, 150% 0%);
+}
 
+.quota_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #00aeef;
+  clip-path: polygon(0 0, 100% 100%, 150% 0%);
+}
+
+.mid_top {
+}
+@media (max-width: 1300px) {
+  .mid_top {
+    display: none;
+  }
+
+}

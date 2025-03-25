@@ -5,6 +5,11 @@ import { CgMail } from "react-icons/cg";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdWifiCalling3 } from "react-icons/md";
 import { FiClock } from "react-icons/fi";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaInstagram } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 const Nav = () => {
     return (
         <nav>
@@ -201,8 +206,40 @@ const Nav = () => {
                     {/* 1/4-start */}
                     <div className={`${Style.navbar_right} h-full w-1/4 flex items-center`}>
 
-                        <div className="">
-                            sdfsdfsdf
+                        <div className=" flex flex-col justify-between h-full py-2">
+                            <div className="">
+                                <div className=" flex items-center gap-5">
+                                    <Link href={"/"}>
+                                        <FaFacebookF className=" text-white" />
+                                    </Link>
+                                    <Link href={"/"}>
+                                        <FaLinkedinIn className=" text-white" />
+                                    </Link>
+                                    <Link href={"/"}>
+                                        <RiTwitterXFill className=" text-white" />
+                                    </Link>
+                                    <Link href={"/"}>
+                                        <FaInstagram className=" text-white" />
+                                    </Link>
+                                </div>
+                            </div>
+                            {/* btm-start */}
+                            <div className=" flex items-center">
+                                <div className=" flex items-center gap-2 w-3/6">
+                                    <div className="">
+                                        <FaSearch className="" />
+                                    </div>
+                                    <input type="text" name="" id="" placeholder="Search..." />
+                                </div>
+                                <div className="">
+                                    <button className={`relative bg-white text-black p-2 `}>
+                                        Request a Quota
+                                        <div className={`${Style.quota_right}`}>
+
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         {/* Border_Corner_start */}
                         <div className={`${Style.corner_right} overflow-hidden`}
