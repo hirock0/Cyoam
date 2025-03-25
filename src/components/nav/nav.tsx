@@ -19,7 +19,7 @@ const Nav = () => {
     const [searchFlag, setSearchFlag] = useState(false)
     const [media, setMedia] = useState(false)
     const [menuFlag, setMenuFlag] = useState(false)
-
+    const [scrollFlag, setScrolFlag] = useState(false)
 
     useEffect(() => {
         const handler = () => {
@@ -31,8 +31,24 @@ const Nav = () => {
         return () => { window.removeEventListener("click", handler) }
     }, [])
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolFlag(window.scrollY > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
+
+
     return (
-        <nav className=" sticky top-0 z-50">
+        <nav className={`${scrollFlag && "bg-white"} sticky top-0 z-50`}>
             <div className=" container mx-auto">
                 <div className={`${Style.navbar} h-28 max-md:h-24 max-sm:h-20 flex items-center`}>
                     {/* 3/4-start */}
@@ -202,8 +218,8 @@ const Nav = () => {
 
                                         </ul>
                                     </div>
-                                  
-                            
+
+
 
                                 </div>
                             </div>
@@ -211,9 +227,9 @@ const Nav = () => {
                         {/* mid-part-end */}
 
                         {/* Border_Corner_start */}
-                        <div className={`${Style.corner_left} max-sm:hidden overflow-hidden`}
+                        <div className={`${Style.corner_left} max-sm:hidden overflow-hidden `}
                             style={{
-                                backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')",
+                                background: `${!scrollFlag ? "url(https://i.ibb.co/23T1jk7W/dots-back.png)" : "white"}`,
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",
                                 backgroundSize: "cover",
@@ -279,7 +295,7 @@ const Nav = () => {
                         {/* Border_Corner_start */}
                         <div className={`${Style.corner_right} max-sm:hidden overflow-hidden`}
                             style={{
-                                backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
+                                background: `${!scrollFlag ? "url(https://i.ibb.co/23T1jk7W/dots-back.png)" : "white"}`,
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",
                                 backgroundSize: "cover",
