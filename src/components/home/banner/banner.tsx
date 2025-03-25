@@ -23,7 +23,7 @@ const Banner = () => {
 
             {/* banner_section_start */}
             <section>
-                <div className=" container max-sm:px-3 mx-auto pb-52">
+                <div className=" container max-sm:px-3 mx-auto">
                     <div className=" flex gap-5 max-md:flex-col py-10 justify-between">
                         <div className=" w-1/2 max-md:w-full space-y-5 max-md:space-y-3">
                             <div className=" mb-5">
@@ -72,6 +72,16 @@ const Banner = () => {
 
                                     </div>
                                 </button>
+                            </div>
+                            <div className=" absolute h-52 left-0 flex flex-col gap-3 ">
+                                <svg width="181" height="213" viewBox="0 0 181 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M180.645 212.112L-54.519 188.739L128.256 5.53143C138.193 -4.40536 155.217 1.65408 156.606 15.6666L180.645 212.112Z" fill="black" fill-opacity="0.03" />
+                                </svg>
+                                <svg width="440" height="306" viewBox="0 0 440 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M434.367 80.4613L213.557 301.054C210.041 304.571 205.117 306.32 200.158 305.833L190.275 304.859L-56.8454 280.603C-60.7588 280.225 -64.2574 278.493 -66.8904 275.897C-69.4873 273.264 -71.2185 269.765 -71.5972 265.852L-97.7647 1.02128L-97.6024 0.858979L180.681 28.1806L424.231 52.1118C438.226 53.4824 444.303 70.5246 434.367 80.4613Z" fill="black" fill-opacity="0.03" />
+                                </svg>
+
+
                             </div>
 
                             {/* divider_start */}

@@ -76,7 +76,6 @@ const Nav = () => {
                             </svg>
                             {/* logo_svg */}
 
-
                         </div>
                         {/* mid-part_start */}
                         <div className=" h-full max-lg:flex max-lg:items-center  px-5">
@@ -143,10 +142,6 @@ const Nav = () => {
                                                 Home
                                             </Link>
                                             </li>
-
-
-
-
                                         </ul>
                                     </div>
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
@@ -203,15 +198,8 @@ const Nav = () => {
                                                 Home
                                             </Link>
                                             </li>
-
-
-
-
                                         </ul>
                                     </div>
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -227,7 +215,6 @@ const Nav = () => {
                                 clipPath: "polygon(0 0, 100% 100%, 0 100%)"
                             }}
                         >
-
                         </div>
                         {/* Border_Corner_end */}
                     </div>
@@ -236,7 +223,6 @@ const Nav = () => {
                     <div className={`${Style.navbar_right} h-full w-1/4 flex items-center`}
 
                     >
-
                         <div onClick={(e) => e.stopPropagation()} className=" flex flex-col max-lg:gap-3 max-sm:gap-1 justify-between h-full py-2">
                             <div className="">
                                 <button className=" md:hidden max-sm:text-sm" onClick={() => { setMedia(!media), setSearchFlag(false), setMenuFlag(false) }}>Media</button>
@@ -272,7 +258,6 @@ const Nav = () => {
                                                 clipPath: "polygon(0 0, 100% 100%, 150% 0%)"
                                             }}
                                         >
-
                                         </div>
                                     </button>
                                 </div>
