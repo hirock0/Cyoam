@@ -91,11 +91,11 @@ const Nav = () => {
                             </div>
                             {/* ----------------- */}
                             <div className="">
-                                <div onClick={(e) => e.stopPropagation()} className={` ${!menuFlag ? " max-sm:translate-x-full" : " max-sm:translate-x-0"} max-md:transition-all max-md:grid max-sm:w-full max-sm:p-5 max-md:grid-cols-3 max-sm:fixed max-sm:top-20 max-sm:left-0 max-sm:bg-cyan-600 flex items-center gap-5 max-lg:text-sm`}>
+                                <div onClick={(e) => e.stopPropagation()} className={` ${!menuFlag ? " max-sm:translate-x-full" : " max-sm:translate-x-0"} max-md:transition-all max-md:grid max-sm:w-full max-sm:p-5 max-md:grid-cols-3 max-sm:fixed max-sm:top-20 max-sm:left-0 max-sm:bg-blue-400 flex items-center gap-5 max-lg:text-sm`}>
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
                                         <h1 >Home</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
-                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                        <ul className=" backdrop:filter backdrop-blur-3xl bg-blue-800/20 rounded-b-4xl px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
                                             <li><Link href={"/sadf"}>
                                                 Home
                                             </Link>
@@ -117,7 +117,7 @@ const Nav = () => {
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
                                         <h1 >About</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
-                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                        <ul className=" backdrop:filter backdrop-blur-3xl bg-blue-800/20 rounded-b-4xl px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
                                             <li><Link href={"/sadf"}>
                                                 Home
                                             </Link>
@@ -137,9 +137,9 @@ const Nav = () => {
                                         </ul>
                                     </div>
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
-                                        <h1 >Service</h1>
+                                        <h1 >Services</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
-                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                        <ul className=" backdrop:filter backdrop-blur-3xl bg-blue-800/20 rounded-b-4xl px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
                                             <li><Link href={"/sadf"}>
                                                 Home
                                             </Link>
@@ -161,7 +161,7 @@ const Nav = () => {
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
                                         <h1 >Work</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
-                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                        <ul className=" backdrop:filter backdrop-blur-3xl bg-blue-800/20 rounded-b-4xl px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
                                             <li><Link href={"/sadf"}>
                                                 Home
                                             </Link>
@@ -183,7 +183,7 @@ const Nav = () => {
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
                                         <h1 >Contact</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
-                                        <ul className=" bg-red-200 px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
+                                        <ul className=" backdrop:filter backdrop-blur-3xl bg-blue-800/20 rounded-b-4xl px-5 py-5 space-y-10 hidden group-hover:block absolute z-40 top-5">
                                             <li><Link href={"/sadf"}>
                                                 Home
                                             </Link>
@@ -202,6 +202,8 @@ const Nav = () => {
 
                                         </ul>
                                     </div>
+                                  
+                            
 
                                 </div>
                             </div>
@@ -248,7 +250,7 @@ const Nav = () => {
 
                             </div>
                             {/* btm-start */}
-                            <div className={` max-lg:fixed max-lg:right-1/14 z-40 max-sm:right-0  max-lg:top-28 max-md:top-24 max-sm:top-20  ${!searchFlag ? "max-lg:hidden" : "max-lg:block"} max-lg:transition-all max-lg:bg-slate-300 max-sm:flex-col max-sm:gap-2 max-lg:p-5 max-md:p-3 flex items-center`}>
+                            <div className={` max-lg:fixed max-lg:right-1/14 z-40 max-sm:right-0  max-lg:top-28 max-md:top-24 max-sm:top-20  ${!searchFlag ? "max-lg:hidden" : "max-lg:block"} max-lg:transition-all max-lg:bg-blue-400 max-sm:flex-col max-sm:gap-2 max-lg:p-5 max-md:p-3 flex items-center`}>
                                 <div className=" flex items-center gap-2 w-2/6">
                                     <div className="">
                                         <FaSearch className="" />
