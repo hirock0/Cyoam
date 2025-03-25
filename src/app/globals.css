@@ -18,3 +18,21 @@
   height: 50px;
   background-color: transparent;
 }
+.corner_right_explore{
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 0;
+  width: 20px;
+  height: 20px;
+
+}
+.corner_left_explore{
+  position: absolute;
+  bottom: 0;
+  color: black;
+  left: 0;
+  width: 20px;
+  height: 20px;
+
+}

@@ -2,6 +2,8 @@
 import Nav from "@/components/nav/nav"
 import Image from "next/image"
 import { Bebas_Neue } from "next/font/google"
+import { LuDot } from "react-icons/lu";
+import { GoArrowLeft } from "react-icons/go";
 const babas_neue = Bebas_Neue({
     weight: ["400", "400"],
     subsets: ["latin"]
@@ -21,10 +23,24 @@ const Banner = () => {
 
             {/* banner_section_start */}
             <section>
-                <div className=" container mx-auto">
-                    <div className=" flex max-md:flex-col py-10 justify-between">
-                        <div className="">
-                            <div className={`${babas_neue.className} w-1/2 max-md:w-full text-8xl max-lg:text-7xl max-md:text-center max-sm:text-5xl`}>
+                <div className=" container max-sm:px-3 mx-auto pb-52">
+                    <div className=" flex gap-5 max-md:flex-col py-10 justify-between">
+                        <div className=" w-1/2 max-md:w-full space-y-5 max-md:space-y-3">
+                            <div className=" mb-5">
+                                <button className=" cursor-pointer flex border border-slate-400 items-center px-5 max-sm:px-3">
+                                    <div className=" ">
+                                        <LuDot />
+                                    </div>
+                                    <div>
+                                        Start With Solutions
+                                    </div>
+
+                                    <div className="">
+                                        <LuDot />
+                                    </div>
+                                </button>
+                            </div>
+                            <div className={`${babas_neue.className}  text-8xl max-lg:text-7xl max-md:text-center max-sm:text-5xl`}>
 
                                 <span >
                                     Transforming
@@ -39,14 +55,58 @@ const Banner = () => {
                                 </span>
                             </div>
 
-                            <p className=" w-5/6 max-md:text-center max-md:mx-auto">
+                            <p className=" text-xl w-4/6 max-lg:w-full max-md:w-5/6 max-md:text-center max-md:mx-auto">
                                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                             </p>
+
+                            <div className=" max-md:flex max-md:justify-center max-md:items-center">
+                                <button className=" relative text-white py-4 px-5" style={{
+                                    backgroundColor: "#0C5DB6",
+
+                                }}>
+                                    Explore All Services
+                                    <div className=" bg-white corner_right_explore" style={{ clipPath: "polygon(0 0, 100% 100%, 150% 0%)" }}>
+
+                                    </div>
+                                    <div className=" bg-white rotate-180 corner_left_explore" style={{ clipPath: "polygon(0 0, 100% 100%, 150% 0%)" }}>
+
+                                    </div>
+                                </button>
+                            </div>
+
+                            {/* divider_start */}
+                            <div className=" my-10 max-md:my-3 w-full h-1" style={{
+                                background: "linear-gradient(45deg, #00AEEF, #B0B0B000)"
+                            }}></div>
+                            {/* divider_end */}
+
+                            <div className="flex  px-2 max-lg:flex-col items-center max-md:py-4"
+                                style={{ background: "linear-gradient(45deg, rgba(0, 174, 239, 0.5), rgba(176, 176, 176, 0.2))" }}
+                            >
+                                <div className="  w-1/2 flex items-end relative">
+                                    <div className=" flex items-center gap-3 absolute left-0 z-50 top-2">
+                                        <button>
+                                            <GoArrowLeft size={20} className="text-blue-500" />
+                                        </button>
+                                        <button>
+                                            <GoArrowLeft size={20} className="text-blue-600 rotate-180" />
+                                        </button>
+                                    </div>
+                                    <Image priority src="https://s3-alpha-sig.figma.com/img/9bba/828c/5e97eaacb97a261a37a4a26ace6e61d0?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VbiGRi6qe4PkFTkZJYH-0v6G4O6iku6l9n0yphBLZbD1buy036viu7S72ZgNoeou~tXqgX9i4QxC15bgrrvSRbpr2W0fAVo~gU2~fvHN5bSCfTODj3GPZmowYNsZnkTzHR72jhO4ysvlVd0myIe5AUNpGn6pLBcgfE6pr5u2iS-C1iyaOqpBjHvTFWn-gsXsrYN8oVhOc5jgypAxxZJDUstGBT0DYDK-YH3rULWVZ-Mrf3CdDDWtIq3fV5Jz-71bX8unUbNn1Bes0GDVeqqbkwLOOHzl2F5Nw67phHgryT-IeuNu6n18dakZ4oyzamUcwopVcGkJEa1RqKdJVBn0vQ__" alt="Portrait 1" width={500} height={500} className="w-12 h-12 rounded-full border-cyan-500 border-3" />
+                                    <Image priority src="https://s3-alpha-sig.figma.com/img/cbe3/46be/9b643bcdc2bda9bf5fa82b6bc8253d56?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FOtG~kfDN6pW1XkRZttKrAey9NbC~YEBmkFoFcryJKwTFmJM~0gdOAcubWD2U1JAEUeL0Z6ca1Apuo9blgHjXz15GkzhePIjO-HD3J4tD77tID7jxfd5~ySZKIhktzxyXcG8WB2r7o7NYgC7IElVzjmyzLkQeHzqZSFTOh7yJq4X5nNf1ri~5a55PZGd0UG--QxscdHvSliIibF79XEr-JcT3HPuKiE09D3dkBh7NBdUe8Hdi~C9bzlFL4inGp2fFjCsCQ3bSkjZh7QBkUCXR1Ek70tQR0tIfm7rYY3L~BGOkDAeKCS6OkSKJKz8LTl1zfqbmr6UJAd7z0nBnuCg1Q__" alt="Portrait 2" width={500} height={500} className=" relative -left-3 w-17 h-17 rounded-full border-cyan-500 border-3" />
+                                    <Image priority src="https://s3-alpha-sig.figma.com/img/cbe3/46be/9b643bcdc2bda9bf5fa82b6bc8253d56?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FOtG~kfDN6pW1XkRZttKrAey9NbC~YEBmkFoFcryJKwTFmJM~0gdOAcubWD2U1JAEUeL0Z6ca1Apuo9blgHjXz15GkzhePIjO-HD3J4tD77tID7jxfd5~ySZKIhktzxyXcG8WB2r7o7NYgC7IElVzjmyzLkQeHzqZSFTOh7yJq4X5nNf1ri~5a55PZGd0UG--QxscdHvSliIibF79XEr-JcT3HPuKiE09D3dkBh7NBdUe8Hdi~C9bzlFL4inGp2fFjCsCQ3bSkjZh7QBkUCXR1Ek70tQR0tIfm7rYY3L~BGOkDAeKCS6OkSKJKz8LTl1zfqbmr6UJAd7z0nBnuCg1Q__" alt="Portrait 3" width={500} height={500} className="w-28 h-28 relative -left-7 rounded-full border-cyan-500 border-3" />
+                                </div>
+                                <div className=" h-full py-4 " >
+                                    <p className=" text-slate-700 h-full pl-10 max-md:w-5/6 max-md:text-center max-md:mx-auto">
+                                        It is a long established fact that a reader will be distracted by the readable conten.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
+                        {/* ------------------------------- */}
 
-
-                        <div className="relative h-[500px] p-4">
+                        <div className="relative max-md:h-[550px] max-sm:h-auto ">
 
                             <div className=" w-full h-full overflow-hidden bg-white"
                                 style={{
@@ -57,6 +117,7 @@ const Banner = () => {
                                     alt="Teamwork"
                                     width={500}
                                     height={500}
+                                    priority
                                     className="w-full h-full object-cover grayscale"
                                 />
                             </div>
@@ -64,11 +125,6 @@ const Banner = () => {
 
                             </div>
                         </div>
-
-
-
-
-
 
                     </div>
                 </div>

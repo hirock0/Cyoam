@@ -125,9 +125,6 @@ const Nav = () => {
                                             </Link>
                                             </li>
 
-
-
-
                                         </ul>
                                     </div>
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
@@ -169,9 +166,6 @@ const Nav = () => {
                                             </Link>
                                             </li>
 
-
-
-
                                         </ul>
                                     </div>
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
@@ -190,9 +184,6 @@ const Nav = () => {
                                                 Home
                                             </Link>
                                             </li>
-
-
-
 
                                         </ul>
                                     </div>
