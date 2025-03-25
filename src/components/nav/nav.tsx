@@ -38,7 +38,7 @@ const Nav = () => {
                     {/* 3/4-start */}
                     <div className={`${Style.navbar_left} h-full flex items-center w-3/4 `}>
                         <div className=" max-sm:flex max-sm:gap-5">
-                            <button className=" sm:hidden" onClick={(e) => { e.stopPropagation(), setMenuFlag(!menuFlag) }}>
+                            <button className=" sm:hidden" onClick={(e) => { e.stopPropagation(), setMenuFlag(!menuFlag), setMedia(false), setSearchFlag(false) }}>
                                 <RxHamburgerMenu size={25} />
                             </button>
                             {/* logo_svg */}
@@ -230,7 +230,7 @@ const Nav = () => {
 
                         <div onClick={(e) => e.stopPropagation()} className=" flex flex-col max-lg:gap-3 max-sm:gap-1 justify-between h-full py-2">
                             <div className="">
-                                <button className=" md:hidden max-sm:text-sm" onClick={() => { setMedia(!media), setSearchFlag(false) }}>Media</button>
+                                <button className=" md:hidden max-sm:text-sm" onClick={() => { setMedia(!media), setSearchFlag(false), setMenuFlag(false) }}>Media</button>
                                 <div className={`${!media ? " max-md:hidden" : " max-md:block max-md:flex"} flex items-center gap-5 max-md:fixed max-md:top-24 max-sm:top-20 max-sm:right-0 max-md:bg-blue-400 max-md:p-5 max-md:right-1/16 `}>
                                     <Link href={"/"}>
                                         <FaFacebookF className=" text-white" />
@@ -269,7 +269,7 @@ const Nav = () => {
                                 </div>
                             </div>
                             <div className=" lg:hidden max-lg:flex max-lg:justify-center max-lg:items-center">
-                                <button onClick={() => { setSearchFlag(!searchFlag), setMedia(false) }} className=" cursor-pointer">
+                                <button onClick={() => { setSearchFlag(!searchFlag), setMedia(false), setMenuFlag(false) }} className=" cursor-pointer">
                                     <FaCaretDown size={25} className={` ${!searchFlag ? " rotate-0" : " rotate-180"} hover:text-green-500`} />
                                 </button>
                             </div>
