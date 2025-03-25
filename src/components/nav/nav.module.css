@@ -14,7 +14,6 @@
   width: 30px;
   height: 30px;
   background-color: transparent;
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
 .navbar_right {
@@ -29,10 +28,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 30px; /* Adjust based on angle */
+  width: 30px; 
   height: 30px;
-  background-color: transparent; /* Same as body background */
-  clip-path: polygon(0 0, 100% 100%, 150% 0%);
+  background-color: transparent;
+
 }
 
 .quota_right {
@@ -42,14 +41,14 @@
   width: 10px;
   height: 10px;
   background-color: #00aeef;
-  clip-path: polygon(0 0, 100% 100%, 150% 0%);
+ 
 }
 
 .mid_top {
 }
 @media (max-width: 1300px) {
   .mid_top {
-    display: none;
+    font-size: 11px;
   }
 
 }

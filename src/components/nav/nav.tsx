@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Style from "./nav.module.css"
 import Link from "next/link"
@@ -10,14 +11,36 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
+import { FaCaretDown } from "react-icons/fa6";
+import { useEffect, useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
 const Nav = () => {
+
+    const [searchFlag, setSearchFlag] = useState(false)
+    const [media, setMedia] = useState(false)
+    const [menuFlag, setMenuFlag] = useState(false)
+
+
+    useEffect(() => {
+        const handler = () => {
+            setMedia(false)
+            setSearchFlag(false)
+            setMenuFlag(false)
+        }
+        window.addEventListener("click", handler)
+        return () => { window.removeEventListener("click", handler) }
+    }, [])
+
     return (
-        <nav>
+        <nav className=" sticky top-0 z-50">
             <div className=" container mx-auto">
                 <div className={`${Style.navbar} h-28 max-md:h-24 max-sm:h-20 flex items-center`}>
                     {/* 3/4-start */}
                     <div className={`${Style.navbar_left} h-full flex items-center w-3/4 `}>
-                        <div className=" ">
+                        <div className=" max-sm:flex max-sm:gap-5">
+                            <button className=" sm:hidden" onClick={(e) => { e.stopPropagation(), setMenuFlag(!menuFlag) }}>
+                                <RxHamburgerMenu size={25} />
+                            </button>
                             {/* logo_svg */}
                             <svg className="text-white max-md:w-32" width="208" height="40" viewBox="0 0 388 74" fill="white" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1276_269)">
@@ -37,10 +60,11 @@ const Nav = () => {
                             </svg>
                             {/* logo_svg */}
 
+
                         </div>
                         {/* mid-part_start */}
-                        <div className=" h-full px-5">
-                            <div className={` ${Style.mid_top} h-10 flex items-center gap-3 `}>
+                        <div className=" h-full max-lg:flex max-lg:items-center  px-5">
+                            <div className={` ${Style.mid_top} h-10 flex items-center gap-3 max-lg:hidden `}>
                                 <div className=" flex items-center gap-2">
                                     <CgMail className=" text-cyan-300" />
                                     <h1>
@@ -67,7 +91,7 @@ const Nav = () => {
                             </div>
                             {/* ----------------- */}
                             <div className="">
-                                <div className=" flex items-center gap-5 max-lg:hidden">
+                                <div onClick={(e) => e.stopPropagation()} className={` ${!menuFlag ? " max-md:translate-x-full" : " max-md:translate-x-0"} max-md:transition-all max-md:grid max-sm:w-full max-sm:p-5 max-md:grid-cols-3 max-sm:fixed max-sm:top-20 max-sm:left-0 max-sm:bg-cyan-600 flex items-center gap-5 max-lg:text-sm`}>
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
                                         <h1 >Home</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
@@ -179,23 +203,19 @@ const Nav = () => {
                                         </ul>
                                     </div>
 
-
-
-
-
-
                                 </div>
                             </div>
                         </div>
                         {/* mid-part-end */}
 
                         {/* Border_Corner_start */}
-                        <div className={`${Style.corner_left} overflow-hidden`}
+                        <div className={`${Style.corner_left} max-sm:hidden overflow-hidden`}
                             style={{
-                                backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
+                                backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')",
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover"
+                                backgroundSize: "cover",
+                                clipPath: "polygon(0 0, 100% 100%, 0 100%)"
                             }}
                         >
 
@@ -204,11 +224,14 @@ const Nav = () => {
                     </div>
                     {/* 3/4-end */}
                     {/* 1/4-start */}
-                    <div className={`${Style.navbar_right} h-full w-1/4 flex items-center`}>
+                    <div className={`${Style.navbar_right} h-full w-1/4 flex items-center`}
 
-                        <div className=" flex flex-col justify-between h-full py-2">
+                    >
+
+                        <div onClick={(e) => e.stopPropagation()} className=" flex flex-col max-lg:gap-3 max-sm:gap-1 justify-between h-full py-2">
                             <div className="">
-                                <div className=" flex items-center gap-5">
+                                <button className=" md:hidden max-sm:text-sm" onClick={() => { setMedia(!media), setSearchFlag(false) }}>Media</button>
+                                <div className={`${!media ? " max-md:hidden" : " max-md:block max-md:flex"} flex items-center gap-5 max-md:fixed max-md:top-24 max-sm:top-20 max-sm:right-0 max-md:bg-blue-400 max-md:p-5 max-md:right-1/16 `}>
                                     <Link href={"/"}>
                                         <FaFacebookF className=" text-white" />
                                     </Link>
@@ -222,32 +245,43 @@ const Nav = () => {
                                         <FaInstagram className=" text-white" />
                                     </Link>
                                 </div>
+
                             </div>
                             {/* btm-start */}
-                            <div className=" flex items-center">
-                                <div className=" flex items-center gap-2 w-3/6">
+                            <div className={` max-lg:fixed max-lg:right-1/14 z-40 max-sm:right-0  max-lg:top-28 max-md:top-24 max-sm:top-20  ${!searchFlag ? "max-lg:hidden" : "max-lg:block"} max-lg:transition-all max-lg:bg-slate-300 max-sm:flex-col max-sm:gap-2 max-lg:p-5 max-md:p-3 flex items-center`}>
+                                <div className=" flex items-center gap-2 w-2/6">
                                     <div className="">
                                         <FaSearch className="" />
                                     </div>
                                     <input type="text" name="" id="" placeholder="Search..." />
                                 </div>
                                 <div className="">
-                                    <button className={`relative bg-white text-black p-2 `}>
+                                    <button className={`relative text-sm bg-white text-black p-2 `}>
                                         Request a Quota
-                                        <div className={`${Style.quota_right}`}>
+                                        <div className={`${Style.quota_right} max-lg:hidden `}
+                                            style={{
+                                                clipPath: "polygon(0 0, 100% 100%, 150% 0%)"
+                                            }}
+                                        >
 
                                         </div>
                                     </button>
                                 </div>
                             </div>
+                            <div className=" lg:hidden max-lg:flex max-lg:justify-center max-lg:items-center">
+                                <button onClick={() => { setSearchFlag(!searchFlag), setMedia(false) }} className=" cursor-pointer">
+                                    <FaCaretDown size={25} className={` ${!searchFlag ? " rotate-0" : " rotate-180"} hover:text-green-500`} />
+                                </button>
+                            </div>
                         </div>
                         {/* Border_Corner_start */}
-                        <div className={`${Style.corner_right} overflow-hidden`}
+                        <div className={`${Style.corner_right} max-sm:hidden overflow-hidden`}
                             style={{
                                 backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover"
+                                backgroundSize: "cover",
+                                clipPath: "polygon(0 0, 100% 100%, 150% 0%)"
                             }}
                         >
 
