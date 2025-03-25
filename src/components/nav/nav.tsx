@@ -91,7 +91,7 @@ const Nav = () => {
                             </div>
                             {/* ----------------- */}
                             <div className="">
-                                <div onClick={(e) => e.stopPropagation()} className={` ${!menuFlag ? " max-md:translate-x-full" : " max-md:translate-x-0"} max-md:transition-all max-md:grid max-sm:w-full max-sm:p-5 max-md:grid-cols-3 max-sm:fixed max-sm:top-20 max-sm:left-0 max-sm:bg-cyan-600 flex items-center gap-5 max-lg:text-sm`}>
+                                <div onClick={(e) => e.stopPropagation()} className={` ${!menuFlag ? " max-sm:translate-x-full" : " max-sm:translate-x-0"} max-md:transition-all max-md:grid max-sm:w-full max-sm:p-5 max-md:grid-cols-3 max-sm:fixed max-sm:top-20 max-sm:left-0 max-sm:bg-cyan-600 flex items-center gap-5 max-lg:text-sm`}>
                                     <div className=" flex items-center gap-2 group relative cursor-pointer">
                                         <h1 >Home</h1>
                                         <MdKeyboardArrowDown className=" group-hover:rotate-180" />
