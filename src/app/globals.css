@@ -18,14 +18,7 @@
   height: 50px;
   background-color: transparent;
 }
-.section_corner {
-  position: absolute;
-  top: -50;
-  color: black;
-  left: -50;
-  width: 100px;
-  height: 100px;
-}
+
 .corner_right_explore {
   position: absolute;
   top: 0;
