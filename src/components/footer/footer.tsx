@@ -2,7 +2,7 @@ import { FaDribbble, FaInstagram, FaBehance } from "react-icons/fa";
 import Link from "next/link";
 const Footer = () => {
     return (
-        <footer className="bg-white py-20">
+        <footer className="bg-white py-10">
             <div className=" container mx-auto px-3">
                 <div className=" grid md:grid-cols-4 gap-8 text-gray-700 justify-items-center">
                     {/* Logo & Description */}
