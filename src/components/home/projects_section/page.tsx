@@ -1,7 +1,5 @@
 'use client';
-
 import ProjectCard from '@/components/projectCard/projectCard';
-import Image from 'next/image';
 import { FiArrowUpRight } from "react-icons/fi";
 import { LuDot } from "react-icons/lu";
 import { Bebas_Neue } from "next/font/google"
@@ -53,7 +51,7 @@ export default function PopularProjects() {
                                 <ProjectCard key={index} item={item} />
                             ))}
                         </div>
-                        <div className=" w-3/6 max-md:w-full">
+                        <div className=" w-3/6 max-md:w-full max-md:text-center">
                             <button className=" max-lg:mt-10 max-md:mt-5 cursor-pointer flex border border-slate-400 items-center px-5 max-sm:px-3">
                                 <div className=" ">
                                     <LuDot />
