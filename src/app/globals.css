@@ -18,21 +18,27 @@
   height: 50px;
   background-color: transparent;
 }
-.corner_right_explore{
+.section_corner {
+  position: absolute;
+  top: -50;
+  color: black;
+  left: -50;
+  width: 100px;
+  height: 100px;
+}
+.corner_right_explore {
   position: absolute;
   top: 0;
   color: black;
   right: 0;
   width: 20px;
   height: 20px;
-
 }
-.corner_left_explore{
+.corner_left_explore {
   position: absolute;
   bottom: 0;
   color: black;
   left: 0;
   width: 20px;
   height: 20px;
-
 }

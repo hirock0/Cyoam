@@ -10,7 +10,7 @@ const babas_neue = Bebas_Neue({
 })
 const Banner = () => {
     return (
-        <div className={``}
+        <div className={` pb-20 max-md:pb-10`}
             style={{
                 backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
                 backgroundPosition: "center",
