@@ -2,7 +2,7 @@ import Banner from "@/components/home/banner/banner"
 import Service_section from "@/components/home/popurlar_service_section/service_section"
 const Home = () => {
   return (
-    <div>
+    <div className=" ">
       <Banner />
       <Service_section />
     </div>
