@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer"
 import Acheive_section from "@/components/home/acheive_section/acheive_section"
 import Banner from "@/components/home/banner/banner"
 import Ideas_section from "@/components/home/ideas_section/ideas_section"
@@ -19,6 +20,7 @@ const Home = () => {
       >
         <Acheive_section />
         <Ideas_section />
+        <Footer />
       </div>
     </div>
   )
