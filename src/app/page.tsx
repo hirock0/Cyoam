@@ -9,8 +9,17 @@ const Home = () => {
       <Banner />
       <Service_section />
       <PopularProjects />
-      <Acheive_section />
-      <Ideas_section />
+      <div className=""
+        style={{
+          backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
+        }}
+      >
+        <Acheive_section />
+        <Ideas_section />
+      </div>
     </div>
   )
 }
