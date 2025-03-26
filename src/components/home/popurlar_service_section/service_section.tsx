@@ -26,7 +26,7 @@ const Service_section = () => {
 
     return (
         <div className=" relative ">
-            <div className=" max-md:hidden bg-slate-900 -rotate-45 -top-24 -left-29 absolute w-48 h-48 " style={{ clipPath: "polygon(0 0, 100% 100%, 150% 0%)" }}>
+            <div className=" max-md:hidden  -rotate-45 -top-24 -left-29 absolute w-48 h-48 bg-gradient-to-b from-slate-900 to-sky-950 via-slate-900 " style={{ clipPath: "polygon(0 0, 100% 100%, 150% 0%)" }}>
 
             </div>
 
