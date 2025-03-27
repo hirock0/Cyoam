@@ -11,7 +11,7 @@ const babas_neue = Bebas_Neue({
 })
 const Banner = () => {
     return (
-        <div className={`${Style.banner}`}
+        <div className={`${Style.banner} h-[1024px]`}
             style={{
                 backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
                 backgroundPosition: "center",

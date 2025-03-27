@@ -16,15 +16,15 @@ import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 const Nav = () => {
 
-    const [searchFlag, setSearchFlag] = useState(false)
-    const [media, setMedia] = useState(false)
+    const [infoFlag, setInfoFlag] = useState(false)
+    const [quota, setQuota] = useState(false)
     const [menuFlag, setMenuFlag] = useState(false)
     const [scrollFlag, setScrolFlag] = useState(false)
 
     useEffect(() => {
         const handler = () => {
-            setMedia(false)
-            setSearchFlag(false)
+            setQuota(false)
+            setInfoFlag(false)
             setMenuFlag(false)
         }
         window.addEventListener("click", handler)
@@ -48,16 +48,19 @@ const Nav = () => {
 
 
     return (
-        <nav className={``}>
+        <nav className={`  z-50`}>
 
-            <div className={`${Style.nav}`}>
-                <div className=" h-[120] flex justify-between items-center lg:mx-[96.22px] max-lg:mx-5">
+            <div className={`${Style.nav} relative `}>
+                <div className=" h-[120px] flex justify-between items-center lg:mx-[96.22px] max-lg:mx-5">
                     <div className={`${Style.nav_left} h-full flex w-full max-lg:w-full bg-[#0C5DB6]`}
                     >
 
                         {/* logo_svg */}
-                        <div className=" h-full  w-fit flex items-center lg:mx-[24px]">
-                            <svg className=" lg:h-[40px] lg:w-[208.89px] max-lg:h-[30px] max-lg:w-[150px]" viewBox="0 0 388 74" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <div className=" h-full text-white  w-fit flex items-center lg:mx-[24px] max-lg:mx-[15px] max-md:mx-[10px]">
+                            <button className=" mr-5 md:hidden cursor-pointer" onClick={(e) => { e.stopPropagation(), setMenuFlag(!menuFlag), setInfoFlag(false), setQuota(false) }}>
+                                <RxHamburgerMenu size={25} />
+                            </button>
+                            <svg className=" lg:h-[40px] lg:w-[208.89px] max-lg:h-[30px] max-lg:w-[150px] max-sm:h-[100px] max-sm:w-[100px] max-sm:h-[25px] "  viewBox="0 0 388 74" fill="white" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M139.88 22.3106H122.63C119.43 22.3106 116.69 23.4706 114.4 25.8006C112.11 28.1206 110.97 30.8806 110.97 34.0806V40.3606C110.97 43.5606 112.11 46.3006 114.4 48.5906C116.69 50.8806 119.43 52.0206 122.63 52.0206H139.88V63.1006H122.63C116.38 63.1006 111.03 60.8706 106.58 56.4206C102.12 51.9606 99.9 46.6106 99.9 40.3706V34.0906C99.9 27.7706 102.13 22.3806 106.58 17.9206C111.04 13.4606 116.39 11.2306 122.63 11.2306H139.88V22.3106Z" />
                                 <path d="M159.19 11.9106L174.04 33.5106L188.89 11.9106H202.37L167.29 62.9906H153.81L167.29 43.3406L145.69 11.9206H159.17L159.19 11.9106Z" />
                                 <path d="M227.38 11.5706H232.52C239.6 11.5706 245.66 14.1006 250.69 19.1706C255.72 24.2406 258.23 30.3106 258.23 37.4006C258.23 44.4906 255.72 50.5406 250.69 55.5706C245.66 60.6006 239.61 63.1106 232.52 63.1106H227.38C220.3 63.1106 214.24 60.6006 209.21 55.5706C204.18 50.5406 201.67 44.4906 201.67 37.4006C201.67 30.3106 204.18 24.2406 209.21 19.1706C214.24 14.1106 220.29 11.5706 227.38 11.5706ZM232.52 24.2506H227.38C223.8 24.2506 220.73 25.5506 218.18 28.1306C215.63 30.7206 214.35 33.8106 214.35 37.3906C214.35 40.9706 215.62 44.0406 218.18 46.5906C220.73 49.1406 223.8 50.4206 227.38 50.4206H232.52C236.1 50.4206 239.17 49.1506 241.72 46.5906C244.27 44.0406 245.55 40.9706 245.55 37.3906C245.55 33.8106 244.27 30.7206 241.72 28.1306C239.17 25.5406 236.1 24.2506 232.52 24.2506Z" />
@@ -72,9 +75,9 @@ const Nav = () => {
                         {/* ------------ */}
 
 
-                        <div className=" border ">
-                            <div className={` border-b h-[39px] max-lg:w-[330px] ${Style.nav_topInfo} flex items-center `}>
-                                <div className="lg:px-[24px]">
+                        <div className="  w-full ">
+                            <div className={` max-sm:hidden lg:text-nowrap  h-[39px] ${Style.nav_topInfo} flex items-center `}>
+                                <div className="lg:px-[24px] border border-blue-500 border-r-0 h-full flex items-center">
                                     <div className=" flex gap-[8px] items-center ">
                                         <CgMail className=" w-[16px] h-[16px] text-[#75DBFF]" />
                                         <p className=" text-[14px] text-[#FFFFFF]">
@@ -82,7 +85,7 @@ const Nav = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="">
+                                <div className="lg:pr-[24px] border border-blue-500 border-r-0 h-full flex items-center">
                                     <div className=" flex gap-[8px] items-center">
                                         <MdWifiCalling3 className=" w-[16px] h-[16px] text-[#75DBFF]" />
                                         <p className=" text-[14px] text-[#FFFFFF]">
@@ -90,7 +93,7 @@ const Nav = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="lg:px-[24px]">
+                                <div className="lg:px-[24px] border border-blue-500  h-full flex items-center">
                                     <div className=" flex gap-[8px] items-center">
                                         <FiClock className=" w-[16px] h-[16px] text-[#75DBFF]" />
                                         <p className=" text-[14px] text-[#FFFFFF]">
@@ -99,14 +102,157 @@ const Nav = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="h-[80px] lg:pl-[24px] bg-green-500">as</div>
+                            {/* ---------------------- */}
+                            <div className={`${Style.nav_mid_bottom}   h-[80px] w-full lg:pl-[24px] `}>
+                                <div className="flex h-full w-full items-center">
+                                    <ul onClick={(e) => e.stopPropagation()} className={`${Style.nav_mid_ul} ${!menuFlag ? " max-md:-translate-x-[110%]" : " max-md:translate-x-0"} max-md:transition-all max-md:absolute max-md:left-0 max-md:top-[120px] flex w-full max-md:flex-col  max-md:w-1/2 max-md:items-start max-md:p-5 max-md:ml-[20px]  max-md:bg-[#0C5DB6] max-md:border-t items-center gap-6 text-white`}>
+                                        <Link href={"/"}>
+                                            <li className=" flex items-center">
+                                                <span className=" text-[16px]">Home</span>
+                                                <MdKeyboardArrowDown className=" h-[20px] w-[20px]" />
+                                            </li>
+                                        </Link>
+                                        <Link href={"/"}>
+                                            <li className=" flex items-center">
+                                                <span className=" text-[16px]">About</span>
+                                                <MdKeyboardArrowDown className=" h-[20px] w-[20px]" />
+                                            </li>
+                                        </Link>
+                                        <Link href={"/"}>
+                                            <li className=" flex items-center">
+                                                <span className=" text-[16px]">Service</span>
+                                                <MdKeyboardArrowDown className=" h-[20px] w-[20px]" />
+                                            </li>
+                                        </Link>
+                                        <Link href={"/"}>
+                                            <li className=" flex items-center">
+                                                <span className=" text-[16px]">Work</span>
+                                                <MdKeyboardArrowDown className=" h-[20px] w-[20px]" />
+                                            </li>
+                                        </Link>
+                                        <Link href={"/"}>
+                                            <li className=" flex items-center">
+                                                <span className=" text-[16px]">Contact</span>
+                                                <MdKeyboardArrowDown className=" h-[20px] w-[20px]" />
+                                            </li>
+                                        </Link>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     {/* ----------------------------------------------- */}
-                    <div className={`${Style.nav_right} h-full w-[400px] bg-[#00AEEF] `} >asd</div>
+                    <div className={`${Style.nav_right} h-full lg:w-[395px] max-lg:w-[300px] max-sm:w-[250px] bg-[#00AEEF] `} >
+
+                        <div className={`${Style.nav_right_bottom} h-[39px] flex  text-white`}>
+
+                            <div className=" flex gap-[8px] border-b border-slate-300 pr-[24px] pl-5 items-center ">
+                                <FaFacebookF className=" w-[16px]  h-[16px] " />
+
+                            </div>
+                            <div className=" border-x border-b border-slate-300 flex gap-[8px] px-[24px] items-center">
+                                <FaLinkedinIn className=" w-[16px] h-[16px] " />
+
+                            </div>
+                            <div className=" flex border-r border-b border-slate-300 gap-[8px] px-[24px] items-center">
+                                <RiTwitterXFill className=" w-[16px] h-[16px] " />
+
+                            </div>
+                            <div className=" flex border-r border-b border-slate-300 gap-[8px] px-[24px] items-center">
+                                <FaInstagram className=" w-[16px] h-[16px] " />
+
+                            </div>
+
+                        </div>
+                        {/* ------------------------------- */}
+
+                        <div className={`${Style.nav_right_bottom_all} h-[80px] px-[24px] flex items-center`}>
+                            <div className=" w-full">
+                                <div className=" h-[43px] flex items-center w-full">
+
+                                    <div className=" h-full flex items-center gap-2 pl-2 w-fit">
+                                        <FaSearch />
+                                        <input type="text" name="" className=" border-0 outline-none w-17" placeholder="Search..." id="" />
+                                    </div>
+                                    <div className={`${Style.nav_right_bottom} text-[16px] h-full flex items-center justify-center bg-white w-full`}>
+                                        Request a Quote
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className={` ${Style.nav_right_lg} hidden h-full`}>
+                            <div className=" h-full flex items-center justify-center">
+                                <div className=" text-center max-sm:flex-col text-white flex gap-5 max-sm:gap-3">
+                                    <button onClick={(e) => { e.stopPropagation(), setInfoFlag(!infoFlag), setQuota(false), setMenuFlag(false) }} className={` cursor-pointer border shadow-lg shadow-blue-600 hover:scale-110 rounded-md hover:bg-blue-600 px-2 py-1 `}>Info</button>
+                                    <button onClick={(e) => { e.stopPropagation(), setQuota(!quota), setMenuFlag(false), setInfoFlag(false) }} className=" cursor-pointer border shadow-lg shadow-blue-600 hover:scale-110 rounded-md hover:bg-blue-600 px-2 py-1 ">Quote</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* ------------------------------ */}
+                    </div>
                 </div>
+
+{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
+
+                {/* info_section_star */}
+
+                <div onClick={(e) => { e.stopPropagation() }} className={`fixed  ${!infoFlag ? " right-full" : " right-0 lg:mx-[96.22px] max-lg:mx-5 "} transition-all z-10 bg-blue-500 p-5  ${!scrollFlag ? " top-[160px]" : " top-[120px]"} ${Style.navInfoAndQuota}   hidden `}>
+                    <div className="lg:px-[24px] border border-blue-500 border-r-0 h-full flex items-center">
+                        <div className=" flex gap-[8px] items-center ">
+                            <CgMail className=" w-[16px] h-[16px] text-[#75DBFF]" />
+                            <p className=" text-[14px] text-[#FFFFFF]">
+                                cyoam.cyoam@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div className="lg:pr-[24px] border border-blue-500 border-r-0 h-full flex items-center">
+                        <div className=" flex gap-[8px] items-center">
+                            <MdWifiCalling3 className=" w-[16px] h-[16px] text-[#75DBFF]" />
+                            <p className=" text-[14px] text-[#FFFFFF]">
+                                +8801799-028445
+                            </p>
+                        </div>
+                    </div>
+                    <div className="lg:px-[24px] border border-blue-500  h-full flex items-center">
+                        <div className=" flex gap-[8px] items-center">
+                            <FiClock className=" w-[16px] h-[16px] text-[#75DBFF]" />
+                            <p className=" text-[14px] text-[#FFFFFF]">
+                                Sut - Thur 9:00 - 17:00, Fri off
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* info_section_end */}
+                {/* ------------------------------------- */}
+                {/* Quota_setection_start */}
+
+                <div onClick={(e) => { e.stopPropagation() }} className={`fixed  ${!quota ? " right-full" : " right-0 lg:mx-[96.22px] max-lg:mx-5 "} transition-all z-10 bg-blue-500 p-5  ${!scrollFlag ? " top-[160px]" : " top-[120px]"} ${Style.navInfoAndQuota}   hidden `}>
+                    <div className=" border-t border-slate-300 p-5 bg-[#00AEEF]">
+                        <div className=" h-full flex max-sm:flex-col max-sm:gap-3 items-center w-full">
+                            <div className=" h-full flex items-center gap-2 pl-2 w-fit">
+                                <FaSearch />
+                                <input type="text" name="" className=" border-0 outline-none w-17 max-sm:w-full" placeholder="Search..." id="" />
+                            </div>
+                            <div className={`  text-[16px] p-5 h-full flex items-center justify-center bg-white w-full`}>
+                                Request a Quote
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                {/* Quota_section_start */}
+                {/* ------------------------------------------------------ */}
             </div>
+            {/* ----------------------------------------------------- */}
+
+
 
         </nav>
     )

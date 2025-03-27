@@ -8,20 +8,6 @@ const Home = () => {
   return (
     <div className=" ">
       <Banner />
-      {/* <Service_section />
-      <PopularProjects /> */}
-      {/* <div className=""
-        style={{
-          backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}
-      >
-        <Acheive_section />
-        <Ideas_section />
-        <Footer />
-      </div> */}
     </div>
   )
 }
