@@ -11,7 +11,7 @@ const babas_neue = Bebas_Neue({
 })
 const Banner = () => {
     return (
-        <div className={`${Style.banner} h-[1024px]`}
+        <div className={`${Style.banner} min-[1024px]:h-[1024px] max-[1024px]:h-[1240px] min-[1440px]:w-[1425px] max-[1440px]:h-[1040px] mx-auto`}
             style={{
                 backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
                 backgroundPosition: "center",
@@ -19,11 +19,15 @@ const Banner = () => {
                 backgroundSize: "cover"
             }}
         >
-            <div className=" pt-[40px] sticky -top-[40px] z-50">
+            <div className=" pt-[40px] max-[1024px]:pt-[0px]">
                 <Nav />
             </div>
+            <div className="">
+                <div className="">
+                    <h1 className="text-center text-7xl">Hirock</h1>
+                </div>
+            </div>
 
- 
         </div>
     )
 }

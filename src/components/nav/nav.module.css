@@ -1,42 +1,16 @@
-@media (max-width: 1400px) {
-  .nav_topInfo,
-  .nav_right_bottom,
-  .nav_right_bottom_all {
-    display: none;
+@media (min-width: 1440px) {
+  .nav_left_corner {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 4% 100%, 0% 75%);
   }
-  .nav_mid_bottom {
-    height: 120px;
-    @apply pl-[0px];
-  }
-  .nav_mid_ul {
-    @apply justify-center;
-  }
-  .nav_right_lg {
-    display: block;
-  }
-  .navInfoAndQuota {
-    display: block;
-
+  .nav_right_corner {
+    clip-path: polygon(0% 0%, 88% 0%, 100% 24%, 100% 100%, 0% 100%);
   }
 }
-
-@media (max-width: 1300px) {
-
-}
-@media (max-width: 1040px) {
-
-}
-
-@media (min-width: 768px) {
-  .nav_left {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 3% 100%, 0% 75%);
+@media (max-width: 1440px) {
+  .nav_left_corner {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 3% 100%, 0% 80%);
   }
-  .nav_right,
-  .nav_right_bottom {
-    clip-path: polygon(0% 0%, 90% 0%, 100% 25%, 100% 100%, 0% 100%);
+  .nav_right_corner {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 22%, 100% 100%, 0% 100%);
   }
-}
-
-@media (max-width: 640px) {
-
 }
