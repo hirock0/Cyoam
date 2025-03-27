@@ -10,8 +10,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
-import { FaCaretDown } from "react-icons/fa6";
+import { FiSearch } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 const Nav = () => {
@@ -44,8 +43,9 @@ const Nav = () => {
 
     return (
         <nav className={` min-[1440px]:w-[1247px] mx-auto h-[120px] max-[1024px]:h-[100px] max-[991px]:h-[90px] max-[741px]:h-[70px] max-[1440px]:mx-[89px] max-[1400px]:mx-[20px] max-[1300px]:mx-[10px] max-[640px]:mx-[10px] flex  items-center`}>
+
             <div className={` w-full h-full flex items-center`}>
-                {/* right_section_start */}
+                {/* left_section_start */}
                 <div className={`${Style.nav_left_corner} h-full bg-[#0C5DB6]  w-3/4 flex items-center`}>
 
                     {/* logo_start */}
@@ -102,7 +102,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <div className="border border-b-0 border-r-0 border-blue-500 flex items-center h-2/3">
-                            <ul onClick={(e) => e.stopPropagation()} className={`px-[3.15%] flex gap-[32px]`}>
+                            <ul onClick={(e) => e.stopPropagation()} className={`px-[3.15%] text-[1rem] flex gap-[32px]`}>
                                 <Link href={"/"}>
                                     <li className=" flex items-center">
                                         <span className="">Home</span>
@@ -139,9 +139,10 @@ const Nav = () => {
                     {/* mid_section_end */}
 
                 </div>
-                {/* right_section_end */}
+                {/* left_section_end */}
                 {/* ------------------------ */}
-                <div className={`${Style.nav_right_corner} h-full bg-[#00AEEF] max-[1024px]:bg-[#0C5DB6] w-1/4`}>
+                {/* rigth_section_start */}
+                <div className={`${Style.nav_right_corner} h-full bg-[#00AEEF] max-[1024px]:bg-[#0C5DB6] max-[1024px]:flex max-[1024px]:items-center w-1/4`}>
 
                     <div className=" h-full max-[1024px]:hidden">
                         <div className="flex items-center w-full h-1/3 mt-[1px]">
@@ -172,7 +173,9 @@ const Nav = () => {
                                 <div className=" h-[43px] max-md:full  flex items-center w-full">
 
                                     <div className=" text-white h-full flex items-center gap-2 pl-2 w-fit">
-                                        <FaSearch className=" max-md:text-2xl" />
+                                        <div className="">
+                                            <FiSearch size={20} />
+                                        </div>
                                         <input type="text" name="" className=" border-0 outline-none w-17" placeholder="Search..." id="" />
                                     </div>
                                     <div className={`${Style.nav_right_corner} cursor-pointer text-[0.875rem] h-full flex items-center justify-center bg-white w-full`}>
@@ -185,10 +188,24 @@ const Nav = () => {
                                 </div>
 
                             </div>
+
+                        </div>
+
+                    </div>
+                    <div className="">
+                        <div className=" text-white h-full flex items-center gap-2 pl-2 w-fit">
+                            <div className="">
+                            <FiSearch size={20} />
+                            </div>
+                            <input type="text" name="" className=" border-0 outline-none w-17" placeholder="Search..." id="" />
                         </div>
                     </div>
                 </div>
+                {/* rigth_section_end */}
+
+
             </div>
+
         </nav>
     )
 }
