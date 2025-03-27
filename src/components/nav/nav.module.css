@@ -1,54 +1,19 @@
-.navbar_left {
-  position: relative;
-  background-color: #0c5db6;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  gap: 15px;
-}
-.corner_left {
-  position: absolute;
-  bottom: 0;
-  color: black;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-}
 
-.navbar_right {
-  position: relative;
-  background-color: #00aeef;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  gap: 15px;
+@media  (max-width: 1400px){
+    .nav_topInfo{
+        display: none;
+    }
 }
-.corner_right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px; 
-  height: 30px;
-  background-color: transparent;
-
-}
-
-.quota_right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #00aeef;
- 
-}
-
-.mid_top {
-}
-@media (max-width: 1300px) {
-  .mid_top {
-    font-size: 11px;
+@media (min-width: 768px) {
+  .nav_left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 3% 100%, 0% 75%);
   }
+  .nav_right {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 25%, 100% 100%, 0% 100%);
+  }
+}
+@media (min-width: 1440px) {
+
 
 }
+
