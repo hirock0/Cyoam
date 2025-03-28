@@ -21,8 +21,9 @@ const Banner = () => {
             }}
         >
 
+            {/* main_start */}
             <div className=" relative h-full">
-                <div className=" absolut z-40 top-0 left-0 right-0 bottom-0">
+                <div className=" absolut z-20 top-0 left-0 right-0 bottom-0">
                     {/* nav_section_start */}
                     <div className=" sticky -top-[40px] max-md:top-0 z-50 pt-[40px] max-md:pt-0 ">
                         <Nav />
@@ -217,6 +218,7 @@ const Banner = () => {
                 </div>
                 {/* vector_section_end */}
             </div>
+            
         </div>
 
     )

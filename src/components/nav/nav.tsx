@@ -14,21 +14,16 @@ import { FiSearch } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
-
 import { Bebas_Neue } from "next/font/google"
-
 const babas_neue = Bebas_Neue({
     weight: ["400", "400"],
     subsets: ["latin"]
 })
-
 const Nav = () => {
     const [infoFlag, setInfoFlag] = useState(false)
     const [quota, setQuota] = useState(false)
     const [menuFlag, setMenuFlag] = useState(false)
     const [scrollFlag, setScrolFlag] = useState(false)
-
-
 
     useEffect(() => {
         const disableScroll = () => {
@@ -64,6 +59,8 @@ const Nav = () => {
         };
     }, []);
 
+
+
     useEffect(() => {
         const handler = () => {
             setQuota(false)
@@ -73,7 +70,6 @@ const Nav = () => {
         window.addEventListener("click", handler)
         return () => { window.removeEventListener("click", handler) }
     }, [])
-
 
     return (
         <nav className={` h-[120px] max-md:h-[100px] max-sm:h-[70px] flex  items-center`}>

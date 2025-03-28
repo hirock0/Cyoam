@@ -10,7 +10,7 @@ interface Item {
 const ServiceCard = ({ item }: { item: Item }) => {
 
     return (
-        <div className=" h-full bg-white p-2"
+        <div className=" h-[517px] bg-white p-2"
             style={{
                 clipPath: "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
             }}
@@ -20,7 +20,7 @@ const ServiceCard = ({ item }: { item: Item }) => {
                     clipPath: "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
                 }}>
                 <div className=" pt-10 px-5 max-sm:px-0">
-                    <h1 className="text-3xl font-semibold"> <span className=" text-blue-500">I</span> {item?.title}</h1>
+                    <h1 className=" font-semibold"> <span className=" text-blue-500">I</span> {item?.title}</h1>
                     <p className=" mt-5">
                         {item?.descriptions}
                     </p>
