@@ -19,7 +19,7 @@ const Banner = () => {
                 backgroundSize: "cover"
             }}
         >
-            <div className=" pt-[40px] max-[1024px]:pt-[0px]">
+            <div className="  pt-[40px] max-[1024px]:pt-[0px]">
                 <Nav />
             </div>
             <div className="">
