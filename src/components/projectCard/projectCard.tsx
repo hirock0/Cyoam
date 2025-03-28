@@ -9,7 +9,7 @@ interface Item {
 
 const ProjectCard = ({ item }: { item: Item }) => {
     return (
-        <div className=" h-full"
+        <div className=" h-[314px]"
 
         >
             <div className="  h-full overflow-hidden bg-white"

@@ -6,6 +6,7 @@ import { LuDot } from "react-icons/lu";
 import Style from "./banner.module.css"
 import { GoArrowLeft } from "react-icons/go";
 import { FiArrowLeft } from "react-icons/fi";
+import Explore_btn from "@/components/ui/buttons/explore_btn/explore_btn";
 const babas_neue = Bebas_Neue({
     weight: ["400", "400"],
     subsets: ["latin"]
@@ -67,9 +68,7 @@ const Banner = () => {
                             </div>
 
                             <div className=" max-md:hidden">
-                                <button className={`explore_btn text-[1rem] tracking-[2%] h-[55px] w-[208px] flex items-center justify-center bg-[#0C5DB6] text-white`}>
-                                    Explore All Services
-                                </button>
+                                <Explore_btn/>
                             </div>
                             {/* ------------------------------------------- */}
                             {/* divider_start */}
@@ -169,13 +168,7 @@ const Banner = () => {
 
                             {/* max-md:button_start */}
                             <div className=" md:hidden max-md:my-[32px] ">
-                                <button
-                                    style={{
-                                        clipPath: "polygon(0% 0%, 95% 0%, 100% 38%, 100% 100%, 6% 100%, 0% 71%)"
-                                    }}
-                                    className={` text-[1rem] w-full tracking-[2%] h-[55px] flex items-center justify-center bg-[#0C5DB6] text-white`}>
-                                    Explore All Services
-                                </button>
+                                    <Explore_btn/>
                             </div>
                             {/* max-md:button_end */}
 
