@@ -10,7 +10,7 @@ interface Item {
 const ServiceCard = ({ item }: { item: Item }) => {
 
     return (
-        <div className=" h-[517px] bg-white p-2"
+        <div className=" h-[517px] bg-white  text-black p-2"
             style={{
                 clipPath: "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
             }}
