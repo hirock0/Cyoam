@@ -5,6 +5,7 @@ import { Bebas_Neue } from "next/font/google"
 import { LuDot } from "react-icons/lu";
 import Style from "./banner.module.css"
 import { GoArrowLeft } from "react-icons/go";
+import { FiArrowLeft } from "react-icons/fi";
 const babas_neue = Bebas_Neue({
     weight: ["400", "400"],
     subsets: ["latin"]
@@ -81,6 +82,15 @@ const Banner = () => {
                             <div className=" flex  items-center h-[96px] max-lg:hidden">
                                 {/* three_person_section_start */}
                                 <div className="h-full  w-[148px] max-md:hidden  relative">
+                                    <div className=" absolute flex gap-5 items-center top-0 left-0 ">
+                                        <button className=" text-[#00AEEF]">
+                                            <FiArrowLeft size={25} />
+                                        </button>
+                                        <button className=" text-[#0C5DB6] rotate-180">
+                                            <FiArrowLeft size={25} />
+                                        </button>
+                                        
+                                    </div>
                                     <div className="flex items-end h-full  absolute ">
                                         <div className=" p-1 bg-[#00AEEF] h-[64px] w-[64px] overflow-hidden rounded-full ">
                                             <Image src={"https://s3-alpha-sig.figma.com/img/9bba/828c/5e97eaacb97a261a37a4a26ace6e61d0?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VbiGRi6qe4PkFTkZJYH-0v6G4O6iku6l9n0yphBLZbD1buy036viu7S72ZgNoeou~tXqgX9i4QxC15bgrrvSRbpr2W0fAVo~gU2~fvHN5bSCfTODj3GPZmowYNsZnkTzHR72jhO4ysvlVd0myIe5AUNpGn6pLBcgfE6pr5u2iS-C1iyaOqpBjHvTFWn-gsXsrYN8oVhOc5jgypAxxZJDUstGBT0DYDK-YH3rULWVZ-Mrf3CdDDWtIq3fV5Jz-71bX8unUbNn1Bes0GDVeqqbkwLOOHzl2F5Nw67phHgryT-IeuNu6n18dakZ4oyzamUcwopVcGkJEa1RqKdJVBn0vQ__"}
@@ -111,7 +121,7 @@ const Banner = () => {
                                         </div>
                                     </div>
                                 </div>
-                             
+
 
                                 <div className=" max-md:relative w-3/4 max-md:w-full h-full flex items-center justify-center bg-gradient-to-r max-md:rounded-l-full from-[#00AEEF] to-[#B0B0B000]">
 
@@ -120,7 +130,7 @@ const Banner = () => {
                                     </p>
 
                                 </div>
-                                
+
 
                             </div>
 
