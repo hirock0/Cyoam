@@ -1,1 +1,3 @@
-
+.botton_rigth_corner {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 90% 100%, 0% 100%);
+}

@@ -6,7 +6,7 @@ import Service_section from "@/components/home/popurlar_service_section/service_
 import PopularProjects from "@/components/home/projects_section/page"
 const Home = () => {
   return (
-    <div className=" ">
+    <div className=" max-w-[1440px]  mx-auto">
       <Banner />
     </div>
   )

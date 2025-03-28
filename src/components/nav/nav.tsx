@@ -27,15 +27,29 @@ const Nav = () => {
     const [quota, setQuota] = useState(false)
     const [menuFlag, setMenuFlag] = useState(false)
     const [scrollFlag, setScrolFlag] = useState(false)
+
+
+
     useEffect(() => {
-        const handler = () => {
-            setQuota(false)
-            setInfoFlag(false)
-            setMenuFlag(false)
+        const disableScroll = () => {
+            document.body.style.overflow = "hidden";
+        };
+
+        const enableScroll = () => {
+            document.body.style.overflow = "auto";
+        };
+
+        if (menuFlag) {
+            disableScroll();
+        } else {
+            enableScroll();
         }
-        window.addEventListener("click", handler)
-        return () => { window.removeEventListener("click", handler) }
-    }, [])
+
+        return () => {
+            enableScroll();
+        };
+    }, [menuFlag])
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -50,9 +64,19 @@ const Nav = () => {
         };
     }, []);
 
-    return (
-        <nav className={` min-[1440px]:w-[1247px] mx-auto h-[120px] max-[1024px]:h-[100px] max-[991px]:h-[90px] max-[741px]:h-[70px] max-[1440px]:mx-[89px] max-[1400px]:mx-[20px] max-[1300px]:mx-[10px] max-[640px]:mx-[10px] flex  items-center`}>
+    useEffect(() => {
+        const handler = () => {
+            setQuota(false)
+            setInfoFlag(false)
+            setMenuFlag(false)
+        }
+        window.addEventListener("click", handler)
+        return () => { window.removeEventListener("click", handler) }
+    }, [])
 
+
+    return (
+        <nav className={` h-[120px] max-md:h-[100px] max-sm:h-[70px] flex  items-center`}>
             <div className={` w-full h-full flex items-center`}>
                 {/* left_section_start */}
                 <div className={`${Style.nav_left_corner} h-full bg-[#0C5DB6]  w-3/4 flex items-center`}>
@@ -183,7 +207,7 @@ const Nav = () => {
 
                                     <div className=" text-white h-full flex items-center gap-2 pl-2 w-fit">
                                         <div className="">
-                                            <FiSearch size={20} />
+                                            <FiSearch size={20} className=" cursor-pointer" />
                                         </div>
                                         <input type="text" name="" className=" border-0 outline-none w-17" placeholder="Search..." id="" />
                                     </div>
@@ -204,7 +228,7 @@ const Nav = () => {
                     <div className=" w-full min-[1024px]:hidden flex mr-[5%] justify-end items-center">
                         <div className=" text-white h-full flex items-center gap-2 pl-2 w-fit">
                             <div className="">
-                                <FiSearch size={20} />
+                                <FiSearch size={20} className=" cursor-pointer" />
                             </div>
                             <input type="text" name="" className=" border-0 outline-none w-17" placeholder="Search..." id="" />
                         </div>
@@ -215,8 +239,6 @@ const Nav = () => {
 
             </div>
             {/* ------------------------------------------ */}
-
-
             <div onClick={(e) => e.stopPropagation()} className={`${!menuFlag ? " -translate-x-[150%]" : "translate-x-[0%]"} transition-all min-[1024px]:hidden  fixed left-0 top-0 right-0 bg-[#0C5DB6] h-[627px] ${Style.side_Menu}`}>
                 <div className=" flex justify-end items-center p-5">
                     <button className=" bg-white text-blue-500 rounded-full p-2" onClick={(e) => { e.stopPropagation(), setMenuFlag(false) }}>
@@ -250,11 +272,8 @@ const Nav = () => {
                     </ul>
                 </div>
             </div>
-
-
             {/* ---------------------------------------- */}
         </nav>
     )
 }
-
 export default Nav
