@@ -13,7 +13,7 @@ const babas_neue = Bebas_Neue({
 const Banner = () => {
     return (
 
-        <div className={`${Style.banner}  md:h-[1010px] max-md:h-[1140px] max-sm:h-[1244px] px-[5.52%] max-sm:px-[2%] mx-auto`}
+        <div className={`${Style.banner}  lg:h-[1010px]  max-sm:h-[1244px] px-[5.52%] max-sm:px-[2%] mx-auto`}
             style={{
                 backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
                 backgroundPosition: "center",
@@ -31,9 +31,9 @@ const Banner = () => {
                     {/* nav_section_end */}
                     {/* banner_start */}
 
-                    <div className=" px-[2.5%] max-md:px-[3%] max-sm:px-[4%] flex py-[72px] max-sm:py-[32px] ">
+                    <div className=" px-[2%] max-md:px-[3%] max-sm:px-[4%] flex max-lg:flex-col py-[72px] max-sm:py-[32px] ">
 
-                        <div className=" w-1/2 max-md:w-full">
+                        <div className=" w-1/2 max-lg:w-full max-md:w-full">
                             <div className="">
                                 <button className=" flex items-center text-[1rem] border px-2">
                                     <span><LuDot /></span>
@@ -48,7 +48,7 @@ const Banner = () => {
                                     Expertise
                                 </span>
                             </h1>
-                            <p className="  text-[1.125rem] leading-[28px] tracking-[0px] my-[33px] max-sm:my-[23px] w-3/4 max-md:w-full ">
+                            <p className="text-[1.125rem] leading-[28px] tracking-[0px] my-[33px] max-sm:my-[23px] w-3/4 max-md:w-full text-[#5D5D5D] ">
                                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                             </p>
 
@@ -174,7 +174,8 @@ const Banner = () => {
 
                         </div>
                         {/* ----------------- */}
-                        <div className="  w-1/2 max-md:hidden max-md:w-full max-sm:h-1/2">
+                        {/* 2nd_part */}
+                        <div className="  w-1/2 max-lg:mt-[32px] max-lg:w-full max-md:hidden max-md:w-full max-sm:h-1/2">
                             <div className={`${Style.botton_rigth_corner} overflow-hidden`}>
 
 
