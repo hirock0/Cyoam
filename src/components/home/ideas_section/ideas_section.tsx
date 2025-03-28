@@ -9,8 +9,8 @@ const babas_neue = Bebas_Neue({
 
 const Ideas_section = () => {
     return (
-        <div className=" ">
-            <div className=" container mx-auto px-3 flex justify-center items-center">
+        <div className=" h-screen bg-amber-200 ">
+            {/* <div className=" container mx-auto px-3 flex justify-center items-center">
                 <div className=" w-5/6 max-lg:w-full mx-auto my-20 overflow-hidden  text-white"
                     style={{
                         clipPath: "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
@@ -70,7 +70,7 @@ const Ideas_section = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

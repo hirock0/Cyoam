@@ -40,8 +40,8 @@ const projects2 = [
 
 export default function PopularProjects() {
     return (
-        <section className="bg-gray-100  py-20">
-            <div className=" container mx-auto px-3">
+        <section className=" h-screen bg-red-300">
+            {/* <div className=" container mx-auto px-3">
 
                 <div className=" space-y-5">
                     <div className=" lg:flex gap-5">
@@ -95,7 +95,7 @@ export default function PopularProjects() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }
