@@ -142,7 +142,7 @@ const Nav = () => {
                 {/* left_section_end */}
                 {/* ------------------------ */}
                 {/* rigth_section_start */}
-                <div className={`${Style.nav_right_corner} h-full bg-[#00AEEF] max-[1024px]:bg-[#0C5DB6] max-[1024px]:flex max-[1024px]:items-center w-1/4`}>
+                <div className={`${Style.nav_right_corner} h-full bg-[#00AEEF] max-[1024px]:bg-[#0C5DB6] max-[1024px]:flex max-[1024px]:items-center w-1/4 max-[640px]:w-2/4`}>
 
                     <div className=" h-full max-[1024px]:hidden">
                         <div className="flex items-center w-full h-1/3 mt-[1px]">
@@ -192,10 +192,10 @@ const Nav = () => {
                         </div>
 
                     </div>
-                    <div className="">
+                    <div className=" w-full min-[1024px]:hidden flex mr-[5%] justify-end items-center">
                         <div className=" text-white h-full flex items-center gap-2 pl-2 w-fit">
                             <div className="">
-                            <FiSearch size={20} />
+                                <FiSearch size={20} />
                             </div>
                             <input type="text" name="" className=" border-0 outline-none w-17" placeholder="Search..." id="" />
                         </div>
