@@ -12,10 +12,11 @@ const babas_neue = Bebas_Neue({
 })
 const Banner = () => {
     return (
-
+        
         <div className={`${Style.banner}  lg:h-[1010px]  max-sm:h-[1244px] px-[5.52%] max-sm:px-[2%] mx-auto`}
             style={{
-                backgroundImage: "url('https://i.ibb.co/23T1jk7W/dots-back.png')", // Or use local path: "url('/dots-back.png')"
+                // backgroundImage: " url('https://i.ibb.co/23T1jk7W/dots-back.png')",
+                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url('https://i.ibb.co/23T1jk7W/dots-back.png')",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover"
