@@ -12,13 +12,12 @@ const babas_neue = Bebas_Neue({
 })
 const Banner = () => {
     return (
-        
+
         <div className={`${Style.banner}  lg:h-[1010px]  max-sm:h-[1244px] px-[5.52%] max-sm:px-[2%] mx-auto`}
             style={{
-                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url('https://i.ibb.co/23T1jk7W/dots-back.png')",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover"
+                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url('https://i.ibb.co.com/JWjw9ssQ/dots-background.png')",
+
+
             }}
         >
 
@@ -89,7 +88,7 @@ const Banner = () => {
                                         <button className=" text-[#0C5DB6] rotate-180">
                                             <FiArrowLeft size={25} />
                                         </button>
-                                        
+
                                     </div>
                                     <div className="flex items-end h-full  absolute ">
                                         <div className=" p-1 bg-[#00AEEF] h-[64px] w-[64px] overflow-hidden rounded-full ">
@@ -123,7 +122,11 @@ const Banner = () => {
                                 </div>
 
 
-                                <div className=" max-md:relative w-3/4 max-md:w-full h-full flex items-center justify-center bg-gradient-to-r max-md:rounded-l-full from-[#00AEEF] to-[#B0B0B000]">
+                                <div className=" max-md:relative w-3/4 max-md:w-full h-full flex items-center justify-center max-md:rounded-l-full"
+                                    style={{
+                                        background: "linear-gradient(90deg, rgba(0,174,239,0.0984768907563025) 2%, rgba(176,176,176,0) 100%)",
+                                    }}
+                                >
 
                                     <p className="pl-[60px] pr-[30px] max-md:pl-[120px] max-md:pr-[20px] text-[#6D6D6D] text-[1.125rem] leading-[28px] tracking-[0px]">
                                         It is a long established fact that a reader will be distracted by the readable conten.
@@ -137,7 +140,11 @@ const Banner = () => {
                             {/* max-lg-users_status_start */}
                             <div className=" lg:hidden flex  items-center h-[96px]">
 
-                                <div className=" max-lg:relative w-3/4 max-lg:w-full h-full flex items-center justify-center bg-gradient-to-r max-lg:rounded-l-full from-[#00AEEF] to-[#B0B0B000]">
+                                <div className=" max-lg:relative w-3/4 max-lg:w-full h-full flex items-center justify-center max-lg:rounded-l-full "
+                                    style={{
+                                        background: "linear-gradient(90deg, rgba(0,174,239,0.0984768907563025) 2%, rgba(176,176,176,0) 100%)",
+                                    }}
+                                >
 
                                     <div className=" max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:bottom-0  p-1 bg-[#00AEEF] h-[96px] w-[96px] rounded-full ">
                                         <Image src={"https://s3-alpha-sig.figma.com/img/9bba/828c/5e97eaacb97a261a37a4a26ace6e61d0?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VbiGRi6qe4PkFTkZJYH-0v6G4O6iku6l9n0yphBLZbD1buy036viu7S72ZgNoeou~tXqgX9i4QxC15bgrrvSRbpr2W0fAVo~gU2~fvHN5bSCfTODj3GPZmowYNsZnkTzHR72jhO4ysvlVd0myIe5AUNpGn6pLBcgfE6pr5u2iS-C1iyaOqpBjHvTFWn-gsXsrYN8oVhOc5jgypAxxZJDUstGBT0DYDK-YH3rULWVZ-Mrf3CdDDWtIq3fV5Jz-71bX8unUbNn1Bes0GDVeqqbkwLOOHzl2F5Nw67phHgryT-IeuNu6n18dakZ4oyzamUcwopVcGkJEa1RqKdJVBn0vQ__"}
