@@ -19,13 +19,13 @@ const ServiceCard = ({ item }: { item: Item }) => {
                 style={{
                     clipPath: "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
                 }}>
-                <div className=" pt-10 px-5 max-sm:px-0">
-                    <h1 className=" font-semibold"> <span className=" text-blue-500">I</span> {item?.title}</h1>
-                    <p className=" mt-5">
+                <div className=" pt-[48px] px-[48px] ">
+                    <h1 className=" text-[2rem] leading-[30px] tracking-[0px]"> <span className=" text-blue-500">I</span> {item?.title}</h1>
+                    <p className=" mt-[36px] text-[1.125rem] leading-7">
                         {item?.descriptions}
                     </p>
                 </div>
-                <div className=" mt-5">
+                <div className=" mt-[44px] ">
                     <Image
                         src={item?.image}
                         alt="Teamwork"
