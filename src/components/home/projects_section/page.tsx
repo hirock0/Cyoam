@@ -44,13 +44,13 @@ export default function PopularProjects() {
     return (
         <section className=" bg-[#042633] max-lg:bg-[#121d22]">
             <div className="section_corner_cut_top_bottom_left bg-white">
-                <div className="px-[5.52%] max-sm:px-[2%] mx-auto md:py-[140px] max-md:pb-[80px] max-md:pt-[48px] ">
+                <div className="px-[5.52%] max-sm:px-[2%] mx-auto py-[140px]  max-lg:py-[80px]  max-md:py-[48px] ">
 
 
 
                     <div className=" max-md:hidden space-y-5">
                         <div className="  lg:flex gap-5">
-                            <div className="  grid grid-cols-2 max-lg:grid-cols-1 gap-5">
+                            <div className="  grid grid-cols-2 max-lg:grid-cols-2 gap-5">
 
                                 {projects.map((item, index) => (
                                     <ProjectCard key={index} item={item} />
@@ -115,7 +115,7 @@ export default function PopularProjects() {
                                 <LuDot />
                             </div>
                         </button>
-                        <h1 className={` ${babas_neue.className} mt-[24px]  mb-[24px] text-[4rem] leading-[56px] -tracking-[1px]  `}>
+                        <h1 className={` ${babas_neue.className} mt-[24px]  mb-[24px] text-[4rem] leading-14 -tracking-[1px]  `}>
                             <span className=''>
                                 check our
                             </span><br></br>

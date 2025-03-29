@@ -30,7 +30,7 @@ const Acheive_section = () => {
                     <div className=" py-[120px] max-sm:py-[48px] px-[5.52%] max-sm:px-[2%] mx-auto">
 
 
-                        <div className=" mt-[28px] flex gap-[24px] max-lg:flex-col">
+                        <div className=" mt-[28px] flex gap-[24px] max-[1300px]:flex-col">
                             <div className=" text-white">
                                 <button className=" text-[0.938rem] cursor-pointer flex border border-slate-400 items-center px-5 max-sm:px-3 text-white">
                                     <div className=" ">
@@ -89,20 +89,6 @@ const Acheive_section = () => {
 
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
             </div>

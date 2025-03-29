@@ -1,9 +1,7 @@
-
 @import "tailwindcss";
 * {
   box-sizing: border-box;
 }
-
 .btn_corner_cut_left_bottom_right_top {
   clip-path: polygon(0% 0%, 92% 0%, 100% 30%, 100% 100%, 8% 100%, 0% 77%);
 }

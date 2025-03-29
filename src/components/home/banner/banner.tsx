@@ -13,13 +13,13 @@ const babas_neue = Bebas_Neue({
 })
 const Banner = () => {
     return (
-        <div className=" bg-[#042633] max-lg:bg-[#121d22]">
+        <div className=" bg-[#042633] max-[1300px]:bg-[#121d22]">
             <div className=" bg-white section_corner_cut_top_bottom_left  "
-                
+
             >
-                <div className={`${Style.banner}  lg:h-[1010px] section_corner_cut_top_bottom_left  max-sm:h-[1244px] px-[5.52%] max-sm:px-[2%] mx-auto`}
+                <div className={`${Style.banner}  section_corner_cut_top_bottom_left  px-[5.52%] max-sm:px-[2%] mx-auto`}
                     style={{
-                        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url('https://i.ibb.co.com/JWjw9ssQ/dots-background.png')",    
+                        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url('https://i.ibb.co.com/JWjw9ssQ/dots-background.png')",
                     }}
                 >
 
@@ -34,9 +34,9 @@ const Banner = () => {
                             {/* nav_section_end */}
                             {/* banner_start */}
 
-                            <div className=" px-[2%] max-md:px-[3%] max-sm:px-[4%] flex max-lg:flex-col py-[72px] max-sm:py-[32px] ">
+                            <div className=" px-[2%] max-md:px-[3%] max-sm:px-[4%] flex max-[1300px]:flex-col pt-[72px] pb-[120px] max-sm:py-[32px] ">
 
-                                <div className=" w-1/2 max-lg:w-full max-md:w-full">
+                                <div className=" w-1/2 max-[1300px]:w-full max-md:w-full">
                                     <div className="">
                                         <button className=" flex items-center text-[1rem] border px-2">
                                             <span><LuDot /></span>
@@ -80,7 +80,7 @@ const Banner = () => {
                                     </div>
                                     {/* divider_end */}
 
-                                    <div className=" flex  items-center h-[96px] max-lg:hidden">
+                                    <div className=" flex  items-center h-[96px] max-[1300px]:hidden">
                                         {/* three_person_section_start */}
                                         <div className="h-full  w-[148px] max-md:hidden  relative">
                                             <div className=" absolute flex gap-5 items-center top-0 left-0 ">
@@ -139,16 +139,16 @@ const Banner = () => {
 
                                     </div>
 
-                                    {/* max-lg-users_status_start */}
+                                    {/* max-[1300px]-users_status_start */}
                                     <div className=" lg:hidden flex  items-center h-[96px]">
 
-                                        <div className=" max-lg:relative w-3/4 max-lg:w-full h-full flex items-center justify-center max-lg:rounded-l-full "
+                                        <div className=" max-[1300px]:relative w-3/4 max-[1300px]:w-full h-full flex items-center justify-center max-[1300px]:rounded-l-full "
                                             style={{
                                                 background: "linear-gradient(90deg, rgba(0,174,239,0.0984768907563025) 2%, rgba(176,176,176,0) 100%)",
                                             }}
                                         >
 
-                                            <div className=" max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:bottom-0  p-1 bg-[#00AEEF] h-[96px] w-[96px] rounded-full ">
+                                            <div className=" max-[1300px]:absolute max-[1300px]:left-0 max-[1300px]:top-0 max-[1300px]:bottom-0  p-1 bg-[#00AEEF] h-[96px] w-[96px] rounded-full ">
                                                 <Image src={"https://s3-alpha-sig.figma.com/img/9bba/828c/5e97eaacb97a261a37a4a26ace6e61d0?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VbiGRi6qe4PkFTkZJYH-0v6G4O6iku6l9n0yphBLZbD1buy036viu7S72ZgNoeou~tXqgX9i4QxC15bgrrvSRbpr2W0fAVo~gU2~fvHN5bSCfTODj3GPZmowYNsZnkTzHR72jhO4ysvlVd0myIe5AUNpGn6pLBcgfE6pr5u2iS-C1iyaOqpBjHvTFWn-gsXsrYN8oVhOc5jgypAxxZJDUstGBT0DYDK-YH3rULWVZ-Mrf3CdDDWtIq3fV5Jz-71bX8unUbNn1Bes0GDVeqqbkwLOOHzl2F5Nw67phHgryT-IeuNu6n18dakZ4oyzamUcwopVcGkJEa1RqKdJVBn0vQ__"}
                                                     alt="img-3"
                                                     width={500}
@@ -158,14 +158,14 @@ const Banner = () => {
                                                 />
                                             </div>
 
-                                            <p className="  pl-[72px] pr-[30px] max-lg:pl-[100px] max-lg:pr-[20px] text-[#6D6D6D] text-[1.125rem] leading-[28px] max-lg:leading-[20px] tracking-[0px] ">
+                                            <p className="  pl-[72px] pr-[30px] max-[1300px]:pl-[100px] max-[1300px]:pr-[20px] text-[#6D6D6D] text-[1.125rem] leading-[28px] max-[1300px]:leading-[20px] tracking-[0px] ">
                                                 It is a long established fact that a reader will be distracted by the readable conten.
                                             </p>
 
                                         </div>
 
                                     </div>
-                                    {/* max-lg-users_status_start */}
+                                    {/* max-[1300px]-users_status_start */}
 
 
                                     {/* max-md:button_start */}
@@ -178,7 +178,7 @@ const Banner = () => {
                                 </div>
                                 {/* ----------------- */}
                                 {/* 2nd_part */}
-                                <div className="  w-1/2 max-lg:mt-[32px] max-lg:w-full max-md:hidden max-md:w-full max-sm:h-1/2">
+                                <div className="  w-1/2 max-[1300px]:mt-[32px] max-[1300px]:w-full max-md:hidden max-md:w-full max-sm:h-1/2">
                                     <div className={`${Style.botton_rigth_corner} overflow-hidden`}>
 
 
@@ -198,7 +198,7 @@ const Banner = () => {
                         </div>
 
                         {/* vector_section_start */}
-                        <div className=" max-lg:hidden overflow-hidden h-full z-10 absolute bottom-0 -left-20">
+                        <div className=" max-[1300px]:hidden overflow-hidden h-full z-10 absolute bottom-0 -left-20">
                             <div className=" relative top-[800px] -rotate-[5deg] -left-20 flex items-end flex-col gap-6  " >
                                 <svg width="408" height="306" viewBox="0 0 408 306" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M402.985 80.2199L182.176 300.813C178.659 304.329 173.736 306.079 168.777 305.592L158.894 304.618L-88.2269 280.362C-92.1403 279.983 -95.6389 278.252 -98.2719 275.655C-100.869 273.022 -102.6 269.523 -102.979 265.61L-129.146 0.779821L-128.984 0.617524L149.3 27.9391L392.85 51.8703C406.844 53.2409 412.922 70.2831 402.985 80.2199Z" fill="black" fill-opacity="0.03" />
