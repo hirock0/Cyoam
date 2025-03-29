@@ -3,9 +3,11 @@
   box-sizing: border-box;
 }
 
-
-.explore_btn {
+.btn_corner_cut_left_bottom_right_top {
   clip-path: polygon(0% 0%, 92% 0%, 100% 30%, 100% 100%, 8% 100%, 0% 77%);
+}
+.btn_corner_cut_left_top_right_bottom{
+  clip-path: polygon(8% 0%, 100% 0%, 100% 83%, 91% 100%, 0% 100%, 0% 20%);
 }
 
 
@@ -15,17 +17,12 @@
 .section_corner_cut_bottom_right  {
   clip-path: polygon(0% 0%, 100% 0%, 100% 91%, 94% 100%, 0% 100%);
 }
-
 @media (max-width: 1024px) {
   .section_corner_cut_top_bottom_left {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 100%, 0% 95%);
   }
 }
-
 @media (max-width: 640px) {
-  .section_corner_cut_top {
-    clip-path: polygon(0% 50%, 12% 100%, 0% 100%);
-  }
   .section_corner_cut_bottom_right {
     clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 92% 100%, 0% 100%);
   }
