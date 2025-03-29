@@ -116,11 +116,11 @@ export default function PopularProjects() {
                             </div>
                         </button>
                         <h1 className={` ${babas_neue.className} mt-[24px]  mb-[24px] text-[4rem] leading-[56px] -tracking-[1px]  `}>
-                            <span className='text-nowrap'>
+                            <span className=''>
                                 check our
                             </span><br></br>
 
-                            <span className=' text-nowrap text-blue-500'>
+                            <span className=' text-blue-500'>
                                 popular projects
                             </span>
                             <br></br>Website

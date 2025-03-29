@@ -31,7 +31,7 @@ const Service_section = () => {
         }
     ]
     return (
-        <div className=" lg:h-[1018px] relative  ">
+        <div className=" lg:h-[1018px] relative ">
             <div className=" h-full   "
             >
                 <div className=" right-0 -top-[60px] absolute left-0 w-full z-30 flex justify-center ">
