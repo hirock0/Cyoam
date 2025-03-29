@@ -33,13 +33,7 @@ const Service_section = () => {
     return (
         <div className=" lg:h-[1018px] relative  ">
             <div className=" h-full   "
-
             >
-                {/* cut_top_left */}
-                <div style={{ background: "url(https://s3-alpha-sig.figma.com/img/6580/8079/311c027968265125a07f026a1fd271c6?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nMjLjWQcloLPw76EdD07N9ztCobluMQPA7K6zfOs6isP5qL78jn7DxbeAg6Xb58mhxBeHXtI~YDVwRpE3q3EWlNPRbQqEmB31z9sik9YQ7BGIx8BhO14R~CbGswgyUYyaSbjBGaZgWkWawu-c2rRQrbL7QQt4XI0jScM~kaxhMZ2xKhMjApHh8AxHrPnfbs2W79w5zHU3iVRmGT37xTyhHRxJB14ALoSw72q0h9sSpJTGZ480NANgFQ56xohRSNMsILU2C6u~dZRvvn3Emmdf4wlRHUBnGogh84ct1KDHFQF~IWj~4kIxvDl36pPEH4SJOwIJwmF1RDAw~U9fcg98Q__)",}} className=" section_corner_cut_top h-52 right-0 -top-51 absolute left-0 bg-gradient-to-b w-full">
-
-                </div>
-                {/* cut_top_left */}
                 <div className=" right-0 -top-[60px] absolute left-0 w-full z-30 flex justify-center ">
                     <svg width="120" height="120" className=" " viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="60" cy="60" r="60" fill="white" />
@@ -82,7 +76,7 @@ const Service_section = () => {
                         backgroundSize: "cover",
                         backgroundPosition: "center"
                     }}
-                    className="  h-full bottomRigthCornerCut">
+                    className="  h-full section_corner_cut_bottom_right ">
 
                     {/* main_start */}
                     {/* Element_start */}
@@ -90,13 +84,13 @@ const Service_section = () => {
                     <section className="px-[5.52%] max-sm:px-[2%] mx-auto">
 
                         <div className="  py-[120px] text-white">
-                           
-                                <h1 className={`${babas_neue.className} text-8xl leading-[81px] tracking-[-2px] max-md:text-7xl max-sm:text-6xl`}>Popular <span className=" text-blue-500">Services</span></h1>
-                                
-                                <p className=" text-[1.125rem] leading-7 tracking-[0px] my-[40px] w-1/2 max-md:w-5/6 max-md:mt-0 max-md:my-[32px] ">
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                </p>
-                            
+
+                            <h1 className={`${babas_neue.className} text-8xl leading-[81px] tracking-[-2px] max-md:text-7xl max-sm:text-6xl`}>Popular <span className=" text-blue-500">Services</span></h1>
+
+                            <p className=" text-[1.125rem] leading-7 tracking-[0px] my-[40px] w-1/2 max-md:w-5/6 max-md:mt-0 max-md:my-[32px] ">
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            </p>
+
                             <div className="">
                                 <div className=" grid grid-cols-3 max-lg:grid-cols-2 max-md:hidden gap-5 justify-items-center">
                                     {
