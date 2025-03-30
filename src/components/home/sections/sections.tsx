@@ -11,7 +11,6 @@ const Sections = () => {
                 <PopularProjects />
                 <Acheive_section />
                 <Ideas_section />
-
             </div>
         </div>
     )

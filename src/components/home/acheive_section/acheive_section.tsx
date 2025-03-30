@@ -1,10 +1,8 @@
 import { Bebas_Neue } from "next/font/google"
 import Image from "next/image"
 import { LuDot } from "react-icons/lu";
-
 import AchievementBtns from "@/components/ui/buttons/achievement_section/achievementBtns/achievementBtns";
-import Corner_cut from "@/components/ui/corner_cut/corner_cut";
-
+import Left_top_cut from "@/components/ui/corner_cut/left_top_cut";
 const babas_neue = Bebas_Neue({
     weight: ["400", "400"],
     subsets: ["latin"]
@@ -14,6 +12,9 @@ const Acheive_section = () => {
 
     return (
         <div className=" relative    ">
+            {/* top_left_cut_start */}
+            <Left_top_cut />
+            {/* top_left_cut_send */}
             <div className=" h-full"
             >
                 {/* ........ */}
@@ -89,9 +90,7 @@ const Acheive_section = () => {
                 </div>
 
             </div>
-            {/* top_left_cut_start */}
-                        <Corner_cut/>
-            {/* top_left_cut_send */}
+
         </div>
     )
 }

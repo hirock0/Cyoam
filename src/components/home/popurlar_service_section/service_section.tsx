@@ -1,5 +1,5 @@
 import ServiceCard from "@/components/serviceCard/serviceCard"
-import Corner_cut from "@/components/ui/corner_cut/corner_cut"
+import Left_top_cut from "@/components/ui/corner_cut/left_top_cut"
 import { Bebas_Neue } from "next/font/google"
 const babas_neue = Bebas_Neue({
     weight: ["400", "400"],
@@ -33,6 +33,9 @@ const Service_section = () => {
     ]
     return (
         <div className=" lg:h-[1018px] relative ">
+            {/* top_left_cut_start */}
+            <Left_top_cut />
+            {/* top_left_cut_send */}
             <div className=" h-full   "
             >
                 <div className=" right-0 -top-[60px] absolute left-0 w-full z-30 flex justify-center ">
@@ -117,9 +120,7 @@ const Service_section = () => {
                 </div>
 
             </div>
-            {/* top_left_cut_start */}
-            <Corner_cut />
-            {/* top_left_cut_send */}
+
         </div>
     )
 }
