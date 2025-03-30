@@ -1,4 +1,5 @@
 import ServiceCard from "@/components/serviceCard/serviceCard"
+import Corner_cut from "@/components/ui/corner_cut/corner_cut"
 import { Bebas_Neue } from "next/font/google"
 const babas_neue = Bebas_Neue({
     weight: ["400", "400"],
@@ -117,9 +118,7 @@ const Service_section = () => {
 
             </div>
             {/* top_left_cut_start */}
-            <div  className=" section_corner_cut_top_left absolute -top-[99px] bg-[#042633] max-lg:bg-[#121d22] h-25 w-[8%] ">
-
-            </div>
+            <Corner_cut />
             {/* top_left_cut_send */}
         </div>
     )
