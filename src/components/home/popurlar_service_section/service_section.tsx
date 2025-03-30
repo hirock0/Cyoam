@@ -116,6 +116,11 @@ const Service_section = () => {
                 </div>
 
             </div>
+            {/* top_left_cut_start */}
+            <div  className=" section_corner_cut_top_left absolute -top-[99px] bg-[#042633] max-lg:bg-[#121d22] h-25 w-[8%] ">
+
+            </div>
+            {/* top_left_cut_send */}
         </div>
     )
 }

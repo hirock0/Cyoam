@@ -5,37 +5,51 @@
 .btn_corner_cut_left_bottom_right_top {
   clip-path: polygon(0% 0%, 92% 0%, 100% 30%, 100% 100%, 8% 100%, 0% 77%);
 }
-.btn_corner_cut_left_top_right_bottom{
+.btn_corner_cut_left_top_right_bottom {
   clip-path: polygon(8% 0%, 100% 0%, 100% 83%, 91% 100%, 0% 100%, 0% 20%);
 }
-.section_corner_cut_bottom_right  {
+.section_corner_cut_bottom_right {
   clip-path: polygon(0% 0%, 100% 0%, 100% 91%, 94% 100%, 0% 100%);
 }
-.section_corner_cut_top_bottom_left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 100%, 0% 89%);
+
+
+.botton_rigth_corner {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 90% 100%, 0% 100%);
 }
+
+
+.section_corner_cut_top_left{
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+}
+
+
+
 @media (max-width: 1024px) {
   .section_corner_cut_bottom_right {
     clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 92% 100%, 0% 100%);
   }
-  .section_corner_cut_top_bottom_left {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 100%, 0% 95%);
+  .section_corner_cut_top_left{
+    height: 85px;
+    top: -84px;
   }
+
 }
+
+
 @media (max-width: 640px) {
   .section_corner_cut_bottom_right {
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 92% 100%, 0% 100%);
   }
-  .btn_corner_cut_left_top_right_bottom{
+  .btn_corner_cut_left_top_right_bottom {
     clip-path: polygon(7% 0%, 100% 0%, 100% 70%, 94% 100%, 0% 100%, 0% 25%);
   }
   .btn_corner_cut_left_bottom_right_top {
     clip-path: polygon(0% 0%, 95% 0%, 100% 30%, 100% 100%, 5% 100%, 0% 77%);
   }
-  .section_corner_cut_top_bottom_left {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12% 100%, 0% 97%);
+  .section_corner_cut_top_left{
+    width: 12%;
+    height: 70px;
+    top: -59px;
   }
+
 }
-
-
-

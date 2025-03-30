@@ -25,11 +25,7 @@ const Acheive_section = () => {
                     }}
                     className=" text-white h-full section_corner_cut_bottom_right">
 
-
-
                     <div className=" py-[120px] max-sm:py-[48px] px-[5.52%] max-sm:px-[2%] mx-auto">
-
-
                         <div className=" mt-[28px] flex gap-[24px] max-[1300px]:flex-col">
                             <div className=" text-white">
                                 <button className=" text-[0.938rem] cursor-pointer flex border border-slate-400 items-center px-5 max-sm:px-3 text-white">
@@ -92,6 +88,11 @@ const Acheive_section = () => {
                 </div>
 
             </div>
+            {/* top_left_cut_start */}
+            <div className=" section_corner_cut_top_left absolute -top-[99px] bg-[#042633] max-lg:bg-[#121d22] h-25 w-[8%] ">
+
+            </div>
+            {/* top_left_cut_send */}
         </div>
     )
 }
