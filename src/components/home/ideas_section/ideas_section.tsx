@@ -8,59 +8,65 @@ const babas_neue = Bebas_Neue({
 
 const Ideas_section = () => {
   return (
-    <div className="px-[7.52%] max-sm:px-[6.52%] mx-auto ">
-      <div className=" flex justify-center items-center">
-        <div className=" idea_section_inside_div_cut relative bg-[#0C5DB6] max-lg:w-full mx-auto my-[160px] max-lg:my-[80px] overflow-hidden text-white">
-          <div
-            className="
+    <div className=""
+      style={{
+        background: "url(https://s3-alpha-sig.figma.com/img/5e4e/9e0a/0ebc7e606033a33f1e6912221a3f04d2?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fxhykfNQyDWViaTduU6VMjqwgfjCTJKEWJEzhDOp6Gq1uIYyMwOrinRy9VBxZ95ZWkFKu-unvfeK1oPtXguNSzvvOYFiSZ2MbIUF4GMKYNXVV6skwXoURGW-91zQpZK3m4xVZi7EiJE7gKlHWnMtnN-jNrkONyB2StSAgRUtV1lgx6G7Lid3V1cRQiAthli7XHxr~fbO5~7DJ80jtnq9yOUJKdsRcLtRkzSgh9dxS-o438xYLtRI0ntGhMnR6muSukl-eeUynXyP3gMdniowKG2JzTO1bZrSh5~Cdn6KxaZymjkmHnjXlA1p4V6WAeawAn2w7Kp7ULiKjIdXJ3A4Mg__)",
+      }}
+    >
+      <div className="px-[7.52%] max-sm:px-[6.52%] mx-auto ">
+        <div className=" flex justify-center items-center">
+          <div className=" idea_section_inside_div_cut relative bg-[#0C5DB6] max-lg:w-full mx-auto my-[160px] max-lg:my-[80px] overflow-hidden text-white">
+            <div
+              className="
                      px-[102px] max-lg:px-[16px] py-[80px] grid grid-cols-2 max-lg:grid-cols-1 gap-5"
-          >
-            <div className="  ">
-              <button className=" max-lg:mt-10 max-md:mt-5 cursor-pointer flex border border-slate-400 items-center px-5 max-sm:px-3">
-                <div className=" ">
-                  <LuDot />
-                </div>
-                <div>Start With Solutions</div>
+            >
+              <div className="  ">
+                <button className=" max-lg:mt-10 max-md:mt-5 cursor-pointer flex border border-slate-400 items-center px-5 max-sm:px-3">
+                  <div className=" ">
+                    <LuDot />
+                  </div>
+                  <div>Start With Solutions</div>
 
-                <div className="">
-                  <LuDot />
+                  <div className="">
+                    <LuDot />
+                  </div>
+                </button>
+                <p
+                  className={`${babas_neue.className} text-[4rem] leading-14 -tracking-[1px] mt-[32px] `}
+                >
+                  Showcase your ideas with a{" "}
+                  <span className=" text-cyan-300">
+                    professional portfolio site
+                  </span>
+                </p>
+              </div>
+              <div className="  flex max-lg:flex-col max-lg:gap-[16px] items-end">
+                <div className=" idea_section_right_bottom_corner_cut relative bg-white p-[8px]  h-[72px] w-full flex items-center justify-end ">
+                  <div
+                    className=" max-lg:hidden h-full flex items-center justify-center  overflow-hidden bg-blue-500 text-white"
+                    style={{
+                      clipPath:
+                        "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
+                    }}
+                  >
+                    <p className={` text-nowrap w-[200px] text-center `}>
+                      Explore All Services
+                    </p>
+                  </div>
                 </div>
-              </button>
-              <p
-                className={`${babas_neue.className} text-[4rem] leading-14 -tracking-[1px] mt-[32px] `}
-              >
-                Showcase your ideas with a{" "}
-                <span className=" text-cyan-300">
-                  professional portfolio site
-                </span>
-              </p>
-            </div>
-            <div className="  flex max-lg:flex-col max-lg:gap-[16px] items-end">
-              <div className=" idea_section_right_bottom_corner_cut relative bg-white p-[8px]  h-[72px] w-full flex items-center justify-end ">
                 <div
-                  className=" max-lg:hidden h-full flex items-center justify-center  overflow-hidden bg-blue-500 text-white"
+                  className=" h-full lg:hidden flex items-center justify-center  overflow-hidden bg-blue-500 text-white max-lg:w-full"
                   style={{
                     clipPath:
                       "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
                   }}
                 >
-                  <p className={` text-nowrap w-[200px] text-center `}>
+                  <p
+                    className={` text-nowrap w-[200px] max-lg:w-full text-center `}
+                  >
                     Explore All Services
                   </p>
                 </div>
-              </div>
-              <div
-                className=" h-full lg:hidden flex items-center justify-center  overflow-hidden bg-blue-500 text-white max-lg:w-full"
-                style={{
-                  clipPath:
-                    "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
-                }}
-              >
-                <p
-                  className={` text-nowrap w-[200px] max-lg:w-full text-center `}
-                >
-                  Explore All Services
-                </p>
               </div>
             </div>
           </div>
