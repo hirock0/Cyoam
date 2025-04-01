@@ -52,11 +52,12 @@ const projects2 = [
 
 export default function PopularProjects() {
   return (
-    <section className=" ">
-      <div className=""
-        style={{
-          background: "url(https://s3-alpha-sig.figma.com/img/5e4e/9e0a/0ebc7e606033a33f1e6912221a3f04d2?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fxhykfNQyDWViaTduU6VMjqwgfjCTJKEWJEzhDOp6Gq1uIYyMwOrinRy9VBxZ95ZWkFKu-unvfeK1oPtXguNSzvvOYFiSZ2MbIUF4GMKYNXVV6skwXoURGW-91zQpZK3m4xVZi7EiJE7gKlHWnMtnN-jNrkONyB2StSAgRUtV1lgx6G7Lid3V1cRQiAthli7XHxr~fbO5~7DJ80jtnq9yOUJKdsRcLtRkzSgh9dxS-o438xYLtRI0ntGhMnR6muSukl-eeUynXyP3gMdniowKG2JzTO1bZrSh5~Cdn6KxaZymjkmHnjXlA1p4V6WAeawAn2w7Kp7ULiKjIdXJ3A4Mg__)",
-        }}
+    <section
+      style={{
+        background: "url(https://s3-alpha-sig.figma.com/img/b142/a588/d03272cac3c5aa7d668764cf919f523d?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LiahZN8SiiW4bJjD5hnsZXxQxd5lA2~cIeA46A8Jet~vx1AD~HGDXK3QpxqxutkWKbdr6piZcngmlJQfRupD7KOCYot2d6a0fB6nAAG3ZDN3x8i3ZHAeJJilW4ggvDp-PW~bJjpFZfSNizxs8Fks4V749KXlIegjHjjtcjjfD2jpYYRXKXedN22g7kLajgnaLIKUp-cugOJ88~whPeSMOyzZdLk1C1pi4KpLcCgpZCRTt4hGGeu4DjGXvUkoLTTZDpDAf62QdEM6nUVHBRs-HbGWHV2i8wamiCPQWogzHgnMFvinfaBOtPIUGtiGKhu5Jcx5E3jnnUnAEBdsImP55Q__)",
+      }}
+      className="">
+      <div className=" bg-[#f6f6f6f6] "
       >
         <div className="px-[7.52%] max-sm:px-[6.52%] mx-auto py-[140px]  max-lg:py-[80px]  max-md:py-[48px] ">
           <div className=" max-md:hidden space-y-5">
