@@ -1,44 +1,44 @@
 @media (min-width: 1440px) {
-  .nav_left_corner {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 4% 100%, 0% 75%);
+    .nav_left_corner {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 4% 100%, 0% 75%);
+    }
+    .nav_right_corner {
+      clip-path: polygon(0% 0%, 88% 0%, 100% 24%, 100% 100%, 0% 100%);
+    }
   }
-  .nav_right_corner {
-    clip-path: polygon(0% 0%, 88% 0%, 100% 24%, 100% 100%, 0% 100%);
+  @media (max-width: 1440px) {
+    .nav_left_corner {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 3% 100%, 0% 80%);
+    }
+    .nav_right_corner {
+      clip-path: polygon(0% 0%, 90% 0%, 100% 22%, 100% 100%, 0% 100%);
+    }
   }
-}
-@media (max-width: 1440px) {
-  .nav_left_corner {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 3% 100%, 0% 80%);
+  @media (max-width: 1040px) {
+    .side_Menu {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+    }
   }
-  .nav_right_corner {
-    clip-path: polygon(0% 0%, 90% 0%, 100% 22%, 100% 100%, 0% 100%);
+  
+  @media (max-width: 1040px) {
+    .side_Menu {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+    }
   }
-}
-@media (max-width: 1040px) {
-  .side_Menu {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+  @media (max-width: 991px) {
+    .side_Menu {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 91%, 93% 100%, 0% 100%);
+    }
   }
-}
-
-@media (max-width: 1040px) {
-  .side_Menu {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+  
+  @media (max-width: 640px) {
+    .nav_left_corner {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 6% 100%, 0% 77%);
+    }
+    .nav_right_corner {
+      clip-path: polygon(0% 0%, 90% 0%, 100% 22%, 100% 100%, 0% 100%);
+    }
+    .side_Menu {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 88% 100%, 0% 100%);
+    }
   }
-}
-@media (max-width: 991px) {
-  .side_Menu {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 91%, 93% 100%, 0% 100%);
-  }
-}
-
-@media (max-width: 640px) {
-  .nav_left_corner {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 6% 100%, 0% 77%);
-  }
-  .nav_right_corner {
-    clip-path: polygon(0% 0%, 90% 0%, 100% 22%, 100% 100%, 0% 100%);
-  }
-  .side_Menu {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 88% 100%, 0% 100%);
-  }
-}
