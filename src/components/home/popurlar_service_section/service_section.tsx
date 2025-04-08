@@ -201,7 +201,7 @@ const Service_section = () => {
                   <h1
                     className={`${babas_neue.className} text-8xl leading-[81px] tracking-[-2px] max-md:text-7xl max-sm:text-6xl`}
                   >
-                    Popular <span className=" text-blue-500">Services</span>
+                    Popular <span className=" text-[#00AEEF]">Services</span>
                   </h1>
 
                   <p className=" text-[1.125rem] leading-7 tracking-[0px] my-[40px] w-1/2 max-md:w-5/6 max-md:mt-0 max-md:my-[32px] ">

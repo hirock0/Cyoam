@@ -17,12 +17,12 @@ const AchievementBtns = () => {
             Achieve
           </p>
           <div className="">
-            <FiArrowUpRight className=" text-blue-500" size={50} />
+            <FiArrowUpRight className=" text-[#00AEEF]" size={50} />
           </div>
         </div>
       </button>
       {/* ---------------------------- */}
-      <button className=" h-[120px] w-full btn_corner_cut_left_top_right_bottom  overflow-hidden bg-blue-500 text-white">
+      <button className=" h-[120px] w-full btn_corner_cut_left_top_right_bottom  overflow-hidden bg-[#00AEEF] text-white">
         <div className=" flex items-center justify-between text-start p-8 w-full h-full">
           <p
             className={`${babas_neue.className} text-[2rem] text-nowrap  leading-8 `}

@@ -83,7 +83,7 @@ export default function PopularProjects() {
                 >
                   <span className="text-nowrap">check our</span>
                   <br></br>
-                  <span className=" text-nowrap text-blue-500">
+                  <span className=" text-nowrap text-[#00AEEF]">
                     popular projects
                   </span>
                   <br></br>Website
@@ -125,7 +125,7 @@ export default function PopularProjects() {
             >
               <span className="">check our</span>
               <br></br>
-              <span className=" text-blue-500">popular projects</span>
+              <span className=" text-[#00AEEF]">popular projects</span>
               <br></br>Website
             </h1>
 

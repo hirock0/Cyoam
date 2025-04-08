@@ -48,7 +48,7 @@ const Acheive_section = () => {
                     <h1
                       className={`${babas_neue.className} mt-[28px] max-sm:hidden text-8xl max-sm:text-[4rem] max-sm:leading-14 leading-[81px] -tracking-[2px]`}
                     >
-                      What We <span className=" text-blue-500 ">Aspire To</span>
+                      What We <span className=" text-[#00AEEF]">Aspire To</span>
                       <br></br>Achieve
                     </h1>
                     <h1

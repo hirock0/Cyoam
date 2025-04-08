@@ -46,7 +46,7 @@ const Ideas_section = () => {
                 <div className="  flex max-lg:flex-col max-lg:gap-[16px] items-end">
                   <div className=" idea_section_right_bottom_corner_cut relative bg-white p-[8px]  h-[72px] w-full flex items-center justify-end ">
                     <div
-                      className=" max-lg:hidden h-full flex items-center justify-center  overflow-hidden bg-blue-500 text-white"
+                      className=" max-lg:hidden h-full flex items-center justify-center  overflow-hidden bg-[#00AEEF] text-white"
                       style={{
                         clipPath:
                           "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
@@ -58,7 +58,7 @@ const Ideas_section = () => {
                     </div>
                   </div>
                   <div
-                    className=" h-full lg:hidden flex items-center justify-center  overflow-hidden bg-blue-500 text-white max-lg:w-full"
+                    className=" h-full lg:hidden flex items-center justify-center  overflow-hidden bg-[#00AEEF] text-white max-lg:w-full"
                     style={{
                       clipPath:
                         "polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)",
