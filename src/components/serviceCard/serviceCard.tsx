@@ -1,6 +1,10 @@
 import Image from "next/image";
 import React from "react";
-
+import { Bebas_Neue } from "next/font/google";
+const babas_neue = Bebas_Neue({
+  weight: ["400", "400"],
+  subsets: ["latin"],
+});
 interface Item {
   title: string;
   descriptions: string;
@@ -24,10 +28,6 @@ const ServiceCard = ({ item }: { item: Item }) => {
         }}>
         <div
           className=" h-[517px]   text-black p-2"
-          style={{
-           
-
-          }}
         >
           <div
             className="   h-full overflow-hidden"
@@ -38,15 +38,15 @@ const ServiceCard = ({ item }: { item: Item }) => {
             }}
           >
 
-            <div className=" pt-[48px] px-[48px] ">
-              <h1 className=" text-[2rem] leading-[30px] tracking-[0px]">
-                <span className=" text-blue-500">I</span> {item?.title}
+            <div className=" pt-[48px] px-[48px]  ">
+              <h1 className={`${babas_neue.className} text-[2rem] leading-[28px] tracking-[0px]`}>
+                <span className=" text-[#00AEEF]">I</span> {item?.title}
               </h1>
-              <p className=" mt-[36px] text-[1.125rem] leading-7">
+              <p className=" mt-[30px] text-[1.125rem] leading-7">
                 {item?.descriptions}
               </p>
             </div>
-            <div className=" mt-[44px] ">
+            <div className=" mt-[30px] lg:h-[262px] ">
               <Image
                 src={item?.image}
                 alt="Teamwork"
